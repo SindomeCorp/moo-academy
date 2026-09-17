@@ -1,0 +1,3 @@
+export const source = Object.freeze({repository:'https://github.com/lisdude/toastcore',commit:'4b6a94d45e7bc5e207682204cd8047992c0af8e3',sha256:'75d074db6353f2e9833097072f5e59a117cd2147c43ae9b176f7992b913824d7',graphCommit:'4b8950a55d6ceee5d2444e2c6d0f94328fcced3d',extractorVersion:'0.1.4'});
+export const utilities = [[20,'string','String'],[55,'list','List'],[27,'set','Set'],[26,'math','Math'],[91,'matrix','Vector and matrix'],[43,'time','Time'],[52,'object','Object'],[51,'match','Matching'],[56,'command','Command'],[59,'code','Code'],[24,'wiz','Wizard']].map(([objectId,id,title])=>({objectId,id,title:title+' utilities'}));
+export const worldLimits = {objects:2000,properties:20000,verbs:10000,valueNodes:500000,stringUnits:4000000,inheritanceDepth:100};

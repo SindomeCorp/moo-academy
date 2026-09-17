@@ -1,0 +1,32 @@
+{
+  "name": "moo-academy",
+  "description": "A browser-based learning workspace for MOO programming.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SindomeCorp/moo-academy.git"
+  },
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build:parser": "node scripts/build-parser.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "test:browser": "playwright test",
+    "start": "python3 scripts/serve.py",
+    "docs:screenshot": "node scripts/capture-screenshot.mjs",
+    "build:runtime": "node scripts/build-runtime.mjs",
+    "build": "npm run build:parser && npm run build:runtime",
+    "test:assets": "node scripts/verify-assets.mjs",
+    "test:coverage": "node scripts/test-coverage.mjs",
+    "test:check": "npm run test:assets && node scripts/test-coverage.mjs --all-browsers",
+    "build:common-packages": "node scripts/common-packages/build.mjs"
+  },
+  "dependencies": {
+    "moo-in-javascript": "file:vendor/packages/moo-in-javascript-0.2.3.tgz",
+    "web-tree-sitter": "0.25.10"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.63.0",
+    "c8": "^12.0.0"
+  }
+}

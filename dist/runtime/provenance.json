@@ -1,0 +1,6 @@
+{
+  "package": "moo-in-javascript",
+  "version": "0.2.3",
+  "dependency": "file:vendor/packages/moo-in-javascript-0.2.3.tgz",
+  "tarballSha256": "1f994f7abaec558b2f4e1f3bc2429467224578cccb20c2ec18f9e020afdd4216"
+}

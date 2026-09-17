@@ -1,0 +1,4394 @@
+{
+  "source": "Explicit lesson covers declarations and reviewed exclusions; never inferred from code text.",
+  "entries": [
+    {
+      "sourceVerbId": "#24:0",
+      "utility": "wiz",
+      "names": [
+        "set_programmer"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-wiz-permission",
+          "mode": "browser"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#24:1",
+      "utility": "wiz",
+      "names": [
+        "set_player"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-wiz-permission",
+          "mode": "browser"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#24:2",
+      "utility": "wiz",
+      "names": [
+        "set_owner"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-wiz-ownership",
+          "mode": "source-walkthrough"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#24:3",
+      "utility": "wiz",
+      "names": [
+        "set_property_owner"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-wiz-ownership",
+          "mode": "source-walkthrough"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#24:4",
+      "utility": "wiz",
+      "names": [
+        "unset_player"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-wiz-permission",
+          "mode": "browser"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#24:5",
+      "utility": "wiz",
+      "names": [
+        "set_property_flags"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-wiz-property-flags",
+          "mode": "browser"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#24:6",
+      "utility": "wiz",
+      "names": [
+        "_set_property_flags"
+      ],
+      "classification": "reference-only",
+      "reason": "Internal recursive worker; source explicitly says not to call it directly. Covered through set_property_flags().",
+      "lessons": []
+    },
+    {
+      "sourceVerbId": "#24:7",
+      "utility": "wiz",
+      "names": [
+        "random_password"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-wiz-passwords",
+          "mode": "source-walkthrough"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#24:8",
+      "utility": "wiz",
+      "names": [
+        "queued_tasks"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-wiz-queues",
+          "mode": "source-walkthrough"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#24:9",
+      "utility": "wiz",
+      "names": [
+        "isnewt"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-wiz-identity",
+          "mode": "browser"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#24:10",
+      "utility": "wiz",
+      "names": [
+        "initialize_owned"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-wiz-owned-index",
+          "mode": "source-walkthrough"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#24:11",
+      "utility": "wiz",
+      "names": [
+        "verify_owned_objects"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-wiz-owned-index",
+          "mode": "source-walkthrough"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#24:12",
+      "utility": "wiz",
+      "names": [
+        "connected_wizards",
+        "connected_wizards_unadvertised"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-wiz-advertised",
+          "mode": "browser"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#24:13",
+      "utility": "wiz",
+      "names": [
+        "all_wizards_advertised",
+        "all_wizards",
+        "all_wizards_unadvertised"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-wiz-advertised",
+          "mode": "browser"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#24:14",
+      "utility": "wiz",
+      "names": [
+        "rename_all_instances"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-wiz-rename-verbs",
+          "mode": "source-walkthrough"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#24:15",
+      "utility": "wiz",
+      "names": [
+        "missed_help"
+      ],
+      "classification": "reference-only",
+      "reason": "Internal missing-help instrumentation accepts only the player help call path. Public reporting is taught with show_missing_help().",
+      "lessons": []
+    },
+    {
+      "sourceVerbId": "#24:16",
+      "utility": "wiz",
+      "names": [
+        "show_missing_help"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-wiz-help-report",
+          "mode": "source-walkthrough"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#24:17",
+      "utility": "wiz",
+      "names": [
+        "init_for_core"
+      ],
+      "classification": "reference-only",
+      "reason": "Core initialization hook resets administration state; not an ordinary utility call.",
+      "lessons": []
+    },
+    {
+      "sourceVerbId": "#24:18",
+      "utility": "wiz",
+      "names": [
+        "show_netwho_listing"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-wiz-connection-reports",
+          "mode": "source-walkthrough"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#24:19",
+      "utility": "wiz",
+      "names": [
+        "show_netwho_from_listing"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-wiz-connection-reports",
+          "mode": "source-walkthrough"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#24:20",
+      "utility": "wiz",
+      "names": [
+        "check_player_request",
+        "check_reregistration"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-wiz-registry",
+          "mode": "source-walkthrough"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#24:21",
+      "utility": "wiz",
+      "names": [
+        "make_player"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-wiz-registry",
+          "mode": "source-walkthrough"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#24:22",
+      "utility": "wiz",
+      "names": [
+        "send_new_player_mail"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-wiz-registration-changes",
+          "mode": "source-walkthrough"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#24:23",
+      "utility": "wiz",
+      "names": [
+        "do_make_player"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-wiz-registry",
+          "mode": "source-walkthrough"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#24:24",
+      "utility": "wiz",
+      "names": [
+        "do_register"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-wiz-registration-changes",
+          "mode": "source-walkthrough"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#24:25",
+      "utility": "wiz",
+      "names": [
+        "do_new_password"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-wiz-registration-changes",
+          "mode": "source-walkthrough"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#24:26",
+      "utility": "wiz",
+      "names": [
+        "set_owner_new"
+      ],
+      "classification": "reference-only",
+      "reason": "Legacy alternative ownership implementation. Teach the maintained set_owner() and grant_object() interfaces instead.",
+      "lessons": []
+    },
+    {
+      "sourceVerbId": "#24:27",
+      "utility": "wiz",
+      "names": [
+        "boot_idlers"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-wiz-maintenance",
+          "mode": "source-walkthrough"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#24:28",
+      "utility": "wiz",
+      "names": [
+        "grant_object"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-wiz-ownership",
+          "mode": "source-walkthrough"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#24:29",
+      "utility": "wiz",
+      "names": [
+        "connection_hash"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-wiz-passwords",
+          "mode": "source-walkthrough"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#24:30",
+      "utility": "wiz",
+      "names": [
+        "newt_player"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-wiz-restrictions",
+          "mode": "source-walkthrough"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#24:31",
+      "utility": "wiz",
+      "names": [
+        "unset_programmer"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-wiz-permission",
+          "mode": "browser"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#24:32",
+      "utility": "wiz",
+      "names": [
+        "is_wizard"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-wiz-identity",
+          "mode": "browser"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#24:33",
+      "utility": "wiz",
+      "names": [
+        "expire_mail"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-wiz-maintenance",
+          "mode": "source-walkthrough"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#24:34",
+      "utility": "wiz",
+      "names": [
+        "expire_mail_weekly"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-wiz-maintenance",
+          "mode": "source-walkthrough"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#24:35",
+      "utility": "wiz",
+      "names": [
+        "check_prog_restricted"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-wiz-restrictions",
+          "mode": "source-walkthrough"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#24:36",
+      "utility": "wiz",
+      "names": [
+        "expire_mail_players"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-wiz-maintenance",
+          "mode": "source-walkthrough"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#24:37",
+      "utility": "wiz",
+      "names": [
+        "expire_mail_lists"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-wiz-maintenance",
+          "mode": "source-walkthrough"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#24:38",
+      "utility": "wiz",
+      "names": [
+        "flush_editors"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-wiz-maintenance",
+          "mode": "source-walkthrough"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#24:39",
+      "utility": "wiz",
+      "names": [
+        "random_wizard"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-wiz-queues",
+          "mode": "source-walkthrough"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#24:40",
+      "utility": "wiz",
+      "names": [
+        "set_email_address"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-wiz-email",
+          "mode": "browser"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#24:41",
+      "utility": "wiz",
+      "names": [
+        "get_email_address"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-wiz-email",
+          "mode": "browser"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#26:0",
+      "utility": "math",
+      "names": [
+        "xsin"
+      ],
+      "classification": "reference-only",
+      "reason": "Legacy integer Taylor approximation; modern sin() and explicit angle conversion are taught instead.",
+      "lessons": []
+    },
+    {
+      "sourceVerbId": "#26:1",
+      "utility": "math",
+      "names": [
+        "xcos"
+      ],
+      "classification": "reference-only",
+      "reason": "Legacy integer Taylor approximation; modern cos() and explicit angle conversion are taught instead.",
+      "lessons": []
+    },
+    {
+      "sourceVerbId": "#26:2",
+      "utility": "math",
+      "names": [
+        "factorial"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-math-factorial",
+          "mode": "browser"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#26:3",
+      "utility": "math",
+      "names": [
+        "fibonacci"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-math-series",
+          "mode": "browser"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#26:4",
+      "utility": "math",
+      "names": [
+        "geometric"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-math-series",
+          "mode": "browser"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#26:5",
+      "utility": "math",
+      "names": [
+        "divmod"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-math-divmod",
+          "mode": "browser"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#26:6",
+      "utility": "math",
+      "names": [
+        "combinations"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-math-factorial",
+          "mode": "browser"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#26:7",
+      "utility": "math",
+      "names": [
+        "permutations"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-math-factorial",
+          "mode": "browser"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#26:8",
+      "utility": "math",
+      "names": [
+        "simpson"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-math-integration",
+          "mode": "browser"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#26:9",
+      "utility": "math",
+      "names": [
+        "parts"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-math-divmod",
+          "mode": "browser"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#26:10",
+      "utility": "math",
+      "names": [
+        "div"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-math-divmod",
+          "mode": "browser"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#26:11",
+      "utility": "math",
+      "names": [
+        "mod"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-math-divmod",
+          "mode": "browser"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#26:12",
+      "utility": "math",
+      "names": [
+        "exp"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-math-series",
+          "mode": "browser"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#26:13",
+      "utility": "math",
+      "names": [
+        "aexp"
+      ],
+      "classification": "reference-only",
+      "reason": "Legacy scaled-integer exponential; exp() covers the public modern calculation without fixed-point overflow assumptions.",
+      "lessons": []
+    },
+    {
+      "sourceVerbId": "#26:14",
+      "utility": "math",
+      "names": [
+        "random"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-math-random",
+          "mode": "browser"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#26:15",
+      "utility": "math",
+      "names": [
+        "random_range"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-math-random",
+          "mode": "browser"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#26:16",
+      "utility": "math",
+      "names": [
+        "is_prime"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-math-gcd",
+          "mode": "browser"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#26:17",
+      "utility": "math",
+      "names": [
+        "NOT"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-math-bases",
+          "mode": "browser"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#26:18",
+      "utility": "math",
+      "names": [
+        "BLFromInt"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-math-bases",
+          "mode": "browser"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#26:19",
+      "utility": "math",
+      "names": [
+        "IntFromBL"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-math-bases",
+          "mode": "browser"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#26:20",
+      "utility": "math",
+      "names": [
+        "gcd",
+        "greatest_common_divisor"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-math-gcd",
+          "mode": "browser"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#26:21",
+      "utility": "math",
+      "names": [
+        "lcm",
+        "least_common_multiple"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-math-gcd",
+          "mode": "browser"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#26:22",
+      "utility": "math",
+      "names": [
+        "are_rel_prime",
+        "are_relatively_prime"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-math-gcd",
+          "mode": "browser"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#26:23",
+      "utility": "math",
+      "names": [
+        "base_conversion"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-math-bases",
+          "mode": "browser"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#26:24",
+      "utility": "math",
+      "names": [
+        "norm"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-math-inverse-trig",
+          "mode": "browser"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#26:25",
+      "utility": "math",
+      "names": [
+        "sin"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-math-angles",
+          "mode": "browser"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#26:26",
+      "utility": "math",
+      "names": [
+        "cos"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-math-angles",
+          "mode": "browser"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#26:27",
+      "utility": "math",
+      "names": [
+        "tan"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-math-angles",
+          "mode": "browser"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#26:28",
+      "utility": "math",
+      "names": [
+        "arcsin",
+        "asin"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-math-inverse-trig",
+          "mode": "browser"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#26:29",
+      "utility": "math",
+      "names": [
+        "arccos",
+        "acos"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-math-inverse-trig",
+          "mode": "browser"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#26:30",
+      "utility": "math",
+      "names": [
+        "arctan",
+        "atan"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-math-inverse-trig",
+          "mode": "browser"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#26:31",
+      "utility": "math",
+      "names": [
+        "deg2rads",
+        "deg2rad"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-math-angles",
+          "mode": "browser"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#26:32",
+      "utility": "math",
+      "names": [
+        "rads2deg",
+        "rad2deg"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-math-angles",
+          "mode": "browser"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#26:33",
+      "utility": "math",
+      "names": [
+        "precision"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-math-rounding",
+          "mode": "browser"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#26:34",
+      "utility": "math",
+      "names": [
+        "round"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-math-rounding",
+          "mode": "browser"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#26:35",
+      "utility": "math",
+      "names": [
+        "mean",
+        "average"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-math-totals",
+          "mode": "browser"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#26:36",
+      "utility": "math",
+      "names": [
+        "sum_float"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-math-totals",
+          "mode": "browser"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#26:37",
+      "utility": "math",
+      "names": [
+        "sum_int",
+        "sum"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-math-totals",
+          "mode": "browser"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#26:38",
+      "utility": "math",
+      "names": [
+        "rint"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-math-rounding",
+          "mode": "browser"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#26:39",
+      "utility": "math",
+      "names": [
+        "to_percent"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-math-totals",
+          "mode": "browser"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#27:0",
+      "utility": "set",
+      "names": [
+        "union"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-set-combine",
+          "mode": "browser"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#27:1",
+      "utility": "set",
+      "names": [
+        "intersection"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-set-combine",
+          "mode": "browser"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#27:2",
+      "utility": "set",
+      "names": [
+        "diff*erence"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-set-difference",
+          "mode": "browser"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#27:3",
+      "utility": "set",
+      "names": [
+        "contains"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-set-membership",
+          "mode": "browser"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#27:4",
+      "utility": "set",
+      "names": [
+        "exclusive_or",
+        "xor"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-set-difference",
+          "mode": "browser"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#27:5",
+      "utility": "set",
+      "names": [
+        "difference_suspended",
+        "diff_suspended"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-set-yielding",
+          "mode": "browser"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#27:6",
+      "utility": "set",
+      "names": [
+        "equal"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-set-equal",
+          "mode": "browser"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#27:7",
+      "utility": "set",
+      "names": [
+        "intersection_preserve_case"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-set-equal",
+          "mode": "browser"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#43:0",
+      "utility": "time",
+      "names": [
+        "day"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-time-weekday",
+          "mode": "browser"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#43:1",
+      "utility": "time",
+      "names": [
+        "month"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-time-weekday",
+          "mode": "browser"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#43:2",
+      "utility": "time",
+      "names": [
+        "ampm"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-time-weekday",
+          "mode": "browser"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#43:3",
+      "utility": "time",
+      "names": [
+        "to_seconds"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-time-seconds",
+          "mode": "browser"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#43:4",
+      "utility": "time",
+      "names": [
+        "sun"
+      ],
+      "classification": "reference-only",
+      "reason": "Legacy site-specific solar calculation uses fixed-point trigonometry and location calibration properties. Retained in Reference rather than taught as a portable date/time API.",
+      "lessons": []
+    },
+    {
+      "sourceVerbId": "#43:5",
+      "utility": "time",
+      "names": [
+        "from_ctime"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-time-seconds",
+          "mode": "browser"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#43:6",
+      "utility": "time",
+      "names": [
+        "dhms",
+        "dayshoursminutesseconds"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-time-duration",
+          "mode": "browser"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#43:7",
+      "utility": "time",
+      "names": [
+        "english_time"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-time-duration",
+          "mode": "browser"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#43:8",
+      "utility": "time",
+      "names": [
+        "from_day"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-time-calendar",
+          "mode": "browser"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#43:9",
+      "utility": "time",
+      "names": [
+        "from_month"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-time-calendar",
+          "mode": "browser"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#43:10",
+      "utility": "time",
+      "names": [
+        "dst_midnight"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-time-calendar",
+          "mode": "browser"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#43:11",
+      "utility": "time",
+      "names": [
+        "time_sub"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-time-templates",
+          "mode": "browser"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#43:12",
+      "utility": "time",
+      "names": [
+        "mmddyy",
+        "ddmmyy"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-time-date-order",
+          "mode": "browser"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#43:13",
+      "utility": "time",
+      "names": [
+        "parse_english_time_interval"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-time-duration",
+          "mode": "browser"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#43:14",
+      "utility": "time",
+      "names": [
+        "seconds_until_date"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-time-calendar",
+          "mode": "browser"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#43:15",
+      "utility": "time",
+      "names": [
+        "seconds_until_time"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-time-calendar",
+          "mode": "browser"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#43:16",
+      "utility": "time",
+      "names": [
+        "rfc822_ctime"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-time-templates",
+          "mode": "browser"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#43:17",
+      "utility": "time",
+      "names": [
+        "mmddyyyy",
+        "ddmmyyyy"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-time-date-order",
+          "mode": "browser"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#51:0",
+      "utility": "match",
+      "names": [
+        "match"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-match-candidates",
+          "mode": "browser"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#51:1",
+      "utility": "match",
+      "names": [
+        "match_nth"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-match-candidates",
+          "mode": "browser"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#51:2",
+      "utility": "match",
+      "names": [
+        "match_verb"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-match-command-dispatch",
+          "mode": "browser"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#51:3",
+      "utility": "match",
+      "names": [
+        "match_list"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-match-candidates",
+          "mode": "browser"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#51:4",
+      "utility": "match",
+      "names": [
+        "parse_ordinal_reference",
+        "parse_ordref"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-match-ordinal",
+          "mode": "source-walkthrough"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#51:5",
+      "utility": "match",
+      "names": [
+        "parse_possessive_reference"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-match-possessive",
+          "mode": "browser"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#51:6",
+      "utility": "match",
+      "names": [
+        "object_match_failed"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-match-feedback",
+          "mode": "browser"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#51:7",
+      "utility": "match",
+      "names": [
+        "init_for_core"
+      ],
+      "classification": "reference-only",
+      "reason": "Core initialization hook resets matching_room and calls its parent initializer. It is not an ordinary matching API and should not be run in a learner world.",
+      "lessons": []
+    },
+    {
+      "sourceVerbId": "#52:0",
+      "utility": "object",
+      "names": [
+        "has_property"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-object-property",
+          "mode": "browser"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#52:1",
+      "utility": "object",
+      "names": [
+        "all_properties",
+        "all_verbs"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-object-enumeration",
+          "mode": "browser"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#52:2",
+      "utility": "object",
+      "names": [
+        "has_verb"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-object-definition",
+          "mode": "browser"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#52:3",
+      "utility": "object",
+      "names": [
+        "has_callable_verb"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-object-definition",
+          "mode": "browser"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#52:4",
+      "utility": "object",
+      "names": [
+        "match_verb"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-object-definition",
+          "mode": "browser"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#52:5",
+      "utility": "object",
+      "names": [
+        "isa"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-object-inheritance",
+          "mode": "browser"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#52:6",
+      "utility": "object",
+      "names": [
+        "ancestors"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-object-inheritance",
+          "mode": "browser"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#52:7",
+      "utility": "object",
+      "names": [
+        "ordered_descendants"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-object-inheritance",
+          "mode": "browser"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#52:8",
+      "utility": "object",
+      "names": [
+        "contains"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-object-containment",
+          "mode": "browser"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#52:9",
+      "utility": "object",
+      "names": [
+        "all_contents"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-object-containment",
+          "mode": "browser"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#52:10",
+      "utility": "object",
+      "names": [
+        "findable_properties"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-object-enumeration",
+          "mode": "browser"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#52:11",
+      "utility": "object",
+      "names": [
+        "owned_properties"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-object-enumeration",
+          "mode": "browser"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#52:12",
+      "utility": "object",
+      "names": [
+        "property_conflicts"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-object-reparenting",
+          "mode": "browser"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#52:13",
+      "utility": "object",
+      "names": [
+        "descendants_with_property_suspended"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-object-reparenting",
+          "mode": "browser"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#52:14",
+      "utility": "object",
+      "names": [
+        "locations"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-object-containment",
+          "mode": "browser"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#52:15",
+      "utility": "object",
+      "names": [
+        "all_properties_suspended",
+        "all_verbs_suspended"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-object-enumeration",
+          "mode": "browser"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#52:16",
+      "utility": "object",
+      "names": [
+        "connected"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-object-connections",
+          "mode": "browser"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#52:17",
+      "utility": "object",
+      "names": [
+        "isoneof"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-object-inheritance",
+          "mode": "browser"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#52:18",
+      "utility": "object",
+      "names": [
+        "defines_verb"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-object-definition",
+          "mode": "browser"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#52:19",
+      "utility": "object",
+      "names": [
+        "defines_property"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-object-property",
+          "mode": "browser"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#52:20",
+      "utility": "object",
+      "names": [
+        "has_any_verb",
+        "has_any_property"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-object-property",
+          "mode": "browser"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#52:21",
+      "utility": "object",
+      "names": [
+        "has_readable_prop*erty",
+        "hrp"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-object-property",
+          "mode": "browser"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#52:22",
+      "utility": "object",
+      "names": [
+        "descendants",
+        "descendents"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-object-inheritance",
+          "mode": "browser"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#52:23",
+      "utility": "object",
+      "names": [
+        "leaves"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-object-tree-ends",
+          "mode": "browser"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#52:24",
+      "utility": "object",
+      "names": [
+        "branches"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-object-tree-ends",
+          "mode": "browser"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#52:25",
+      "utility": "object",
+      "names": [
+        "descendants_suspended",
+        "descendents_suspended"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-object-tree-ends",
+          "mode": "browser"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#52:26",
+      "utility": "object",
+      "names": [
+        "leaves_suspended"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-object-tree-ends",
+          "mode": "browser"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#52:27",
+      "utility": "object",
+      "names": [
+        "branches_suspended"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-object-tree-ends",
+          "mode": "browser"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#52:28",
+      "utility": "object",
+      "names": [
+        "disown",
+        "disinherit"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-object-disinherit",
+          "mode": "browser"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#52:29",
+      "utility": "object",
+      "names": [
+        "accessible_verbs"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-object-enumeration",
+          "mode": "browser"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#52:30",
+      "utility": "object",
+      "names": [
+        "accessible_prop*erties",
+        "accessible_props"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-object-enumeration",
+          "mode": "browser"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#55:0",
+      "utility": "list",
+      "names": [
+        "make"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-list-range",
+          "mode": "browser"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#55:1",
+      "utility": "list",
+      "names": [
+        "range"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-list-range",
+          "mode": "browser"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#55:2",
+      "utility": "list",
+      "names": [
+        "map_prop*erty"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-list-mapping",
+          "mode": "browser"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#55:3",
+      "utility": "list",
+      "names": [
+        "map_verb"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-list-mapping",
+          "mode": "browser"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#55:4",
+      "utility": "list",
+      "names": [
+        "map_arg*s"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-list-mapping",
+          "mode": "browser"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#55:5",
+      "utility": "list",
+      "names": [
+        "map_builtin"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-list-mapping",
+          "mode": "browser"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#55:6",
+      "utility": "list",
+      "names": [
+        "find_insert"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-list-search",
+          "mode": "browser"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#55:7",
+      "utility": "list",
+      "names": [
+        "remove_duplicates"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-list-combine",
+          "mode": "browser"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#55:8",
+      "utility": "list",
+      "names": [
+        "arrayset"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-list-positions",
+          "mode": "browser"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#55:9",
+      "utility": "list",
+      "names": [
+        "setremove_all"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-list-combine",
+          "mode": "browser"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#55:10",
+      "utility": "list",
+      "names": [
+        "append"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-list-combine",
+          "mode": "browser"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#55:11",
+      "utility": "list",
+      "names": [
+        "reverse"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-list-positions",
+          "mode": "browser"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#55:12",
+      "utility": "list",
+      "names": [
+        "_reverse"
+      ],
+      "classification": "reference-only",
+      "reason": "Internal argument-splicing implementation of reverse(); teach reverse() instead.",
+      "lessons": []
+    },
+    {
+      "sourceVerbId": "#55:13",
+      "utility": "list",
+      "names": [
+        "compress"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-list-combine",
+          "mode": "browser"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#55:14",
+      "utility": "list",
+      "names": [
+        "sort"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-list-sorting",
+          "mode": "source-walkthrough"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#55:15",
+      "utility": "list",
+      "names": [
+        "sort_suspended"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-list-yielding",
+          "mode": "source-walkthrough"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#55:16",
+      "utility": "list",
+      "names": [
+        "slice"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-list-sorting",
+          "mode": "source-walkthrough"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#55:17",
+      "utility": "list",
+      "names": [
+        "assoc"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-list-assoc",
+          "mode": "browser"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#55:18",
+      "utility": "list",
+      "names": [
+        "iassoc"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-list-assoc",
+          "mode": "browser"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#55:19",
+      "utility": "list",
+      "names": [
+        "iassoc_suspended"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-list-yielding",
+          "mode": "source-walkthrough"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#55:20",
+      "utility": "list",
+      "names": [
+        "assoc_prefix"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-list-search",
+          "mode": "browser"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#55:21",
+      "utility": "list",
+      "names": [
+        "iassoc_prefix"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-list-search",
+          "mode": "browser"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#55:22",
+      "utility": "list",
+      "names": [
+        "iassoc_sorted"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-list-search",
+          "mode": "browser"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#55:23",
+      "utility": "list",
+      "names": [
+        "sort_alist"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-list-sorting",
+          "mode": "source-walkthrough"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#55:24",
+      "utility": "list",
+      "names": [
+        "sort_alist_suspended"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-list-sorting",
+          "mode": "source-walkthrough"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#55:25",
+      "utility": "list",
+      "names": [
+        "randomly_permute"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-list-random",
+          "mode": "browser"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#55:26",
+      "utility": "list",
+      "names": [
+        "count"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-list-flatten",
+          "mode": "browser"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#55:27",
+      "utility": "list",
+      "names": [
+        "flatten"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-list-flatten",
+          "mode": "browser"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#55:28",
+      "utility": "list",
+      "names": [
+        "longest",
+        "shortest"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-list-flatten",
+          "mode": "browser"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#55:29",
+      "utility": "list",
+      "names": [
+        "reverse_suspended"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-list-yielding",
+          "mode": "source-walkthrough"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#55:30",
+      "utility": "list",
+      "names": [
+        "_reverse_suspended"
+      ],
+      "classification": "reference-only",
+      "reason": "Internal implementation of reverse_suspended(); teach its public wrapper instead.",
+      "lessons": []
+    },
+    {
+      "sourceVerbId": "#55:31",
+      "utility": "list",
+      "names": [
+        "randomly_permute_suspended"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-list-random",
+          "mode": "browser"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#55:32",
+      "utility": "list",
+      "names": [
+        "swap_elements"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-list-positions",
+          "mode": "browser"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#55:33",
+      "utility": "list",
+      "names": [
+        "random_item",
+        "random_element"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-list-random",
+          "mode": "browser"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#55:34",
+      "utility": "list",
+      "names": [
+        "assoc_suspended"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-list-yielding",
+          "mode": "source-walkthrough"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#55:35",
+      "utility": "list",
+      "names": [
+        "amerge"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-list-sorting",
+          "mode": "source-walkthrough"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#55:36",
+      "utility": "list",
+      "names": [
+        "passoc"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-list-parallel",
+          "mode": "source-walkthrough"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#55:37",
+      "utility": "list",
+      "names": [
+        "setmove"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-list-positions",
+          "mode": "browser"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#55:38",
+      "utility": "list",
+      "names": [
+        "iassoc_new"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-list-assoc",
+          "mode": "browser"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#55:39",
+      "utility": "list",
+      "names": [
+        "build_alist"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-list-parallel",
+          "mode": "source-walkthrough"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#55:40",
+      "utility": "list",
+      "names": [
+        "flatten_suspended"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-list-yielding",
+          "mode": "source-walkthrough"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#55:41",
+      "utility": "list",
+      "names": [
+        "max_length"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-list-flatten",
+          "mode": "browser"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#55:42",
+      "utility": "list",
+      "names": [
+        "make_alist"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-list-parallel",
+          "mode": "source-walkthrough"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#56:0",
+      "utility": "command",
+      "names": [
+        "object_match_failed"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-command-feedback",
+          "mode": "browser"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#56:1",
+      "utility": "command",
+      "names": [
+        "player_match_result",
+        "player_match_failed"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-command-feedback",
+          "mode": "browser"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#56:2",
+      "utility": "command",
+      "names": [
+        "read"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-command-input",
+          "mode": "source-walkthrough"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#56:3",
+      "utility": "command",
+      "names": [
+        "read_lines"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-command-multiple-lines",
+          "mode": "source-walkthrough"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#56:4",
+      "utility": "command",
+      "names": [
+        "yes_or_no"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-command-input",
+          "mode": "source-walkthrough"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#56:5",
+      "utility": "command",
+      "names": [
+        "read_lines_escape"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-command-multiple-lines",
+          "mode": "source-walkthrough"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#56:6",
+      "utility": "command",
+      "names": [
+        "suspend"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-command-yield-delimiters",
+          "mode": "source-walkthrough"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#56:7",
+      "utility": "command",
+      "names": [
+        "running_out_of_time"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-command-budget",
+          "mode": "source-walkthrough"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#56:8",
+      "utility": "command",
+      "names": [
+        "suspend_if_needed"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-command-budget",
+          "mode": "source-walkthrough"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#56:9",
+      "utility": "command",
+      "names": [
+        "dump_lines"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-command-multiple-lines",
+          "mode": "source-walkthrough"
+        },
+        {
+          "id": "utility-command-quoting",
+          "mode": "browser"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#56:10",
+      "utility": "command",
+      "names": [
+        "explain_syntax"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-command-dispatch",
+          "mode": "source-walkthrough"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#56:11",
+      "utility": "command",
+      "names": [
+        "do_huh"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-command-dispatch",
+          "mode": "source-walkthrough"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#56:12",
+      "utility": "command",
+      "names": [
+        "task_info"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-command-task",
+          "mode": "source-walkthrough"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#56:13",
+      "utility": "command",
+      "names": [
+        "init_for_core"
+      ],
+      "classification": "reference-only",
+      "reason": "Core initialization hook resets scheduler and feature bookkeeping; not an ordinary command utility API.",
+      "lessons": []
+    },
+    {
+      "sourceVerbId": "#56:14",
+      "utility": "command",
+      "names": [
+        "kill_if_laggy"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-command-yield-delimiters",
+          "mode": "source-walkthrough"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#56:15",
+      "utility": "command",
+      "names": [
+        "validate_feature"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-command-dispatch",
+          "mode": "source-walkthrough"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#56:16",
+      "utility": "command",
+      "names": [
+        "reading_input"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-command-input",
+          "mode": "source-walkthrough"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#59:0",
+      "utility": "code",
+      "names": [
+        "eval_d"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-code-debug-eval",
+          "mode": "source-walkthrough"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#59:1",
+      "utility": "code",
+      "names": [
+        "toint",
+        "tonum"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-code-types",
+          "mode": "browser"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#59:2",
+      "utility": "code",
+      "names": [
+        "toobj"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-code-types",
+          "mode": "browser"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#59:3",
+      "utility": "code",
+      "names": [
+        "toerr"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-code-errors",
+          "mode": "browser"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#59:4",
+      "utility": "code",
+      "names": [
+        "error_name"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-code-errors",
+          "mode": "browser"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#59:5",
+      "utility": "code",
+      "names": [
+        "show_object"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-code-inspection",
+          "mode": "browser"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#59:6",
+      "utility": "code",
+      "names": [
+        "show_property"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-code-inspection",
+          "mode": "browser"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#59:7",
+      "utility": "code",
+      "names": [
+        "show_verbdef"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-code-inspection",
+          "mode": "browser"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#59:8",
+      "utility": "code",
+      "names": [
+        "explain_verb_syntax"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-code-arguments",
+          "mode": "browser"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#59:9",
+      "utility": "code",
+      "names": [
+        "verb_p*erms",
+        "verb_permi*ssions"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-code-stack",
+          "mode": "source-walkthrough"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#59:10",
+      "utility": "code",
+      "names": [
+        "verb_loc*ation"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-code-stack",
+          "mode": "source-walkthrough"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#59:11",
+      "utility": "code",
+      "names": [
+        "verb_documentation"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-code-documentation",
+          "mode": "source-walkthrough"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#59:12",
+      "utility": "code",
+      "names": [
+        "set_verb_documentation"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-code-documentation",
+          "mode": "source-walkthrough"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#59:13",
+      "utility": "code",
+      "names": [
+        "parse_propref"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-code-references",
+          "mode": "browser"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#59:14",
+      "utility": "code",
+      "names": [
+        "parse_verbref"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-code-references",
+          "mode": "browser"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#59:15",
+      "utility": "code",
+      "names": [
+        "parse_argspec"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-code-arguments",
+          "mode": "browser"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#59:16",
+      "utility": "code",
+      "names": [
+        "prepositions"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-code-prepositions",
+          "mode": "source-walkthrough"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#59:17",
+      "utility": "code",
+      "names": [
+        "short_prep"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-code-prepositions",
+          "mode": "source-walkthrough"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#59:18",
+      "utility": "code",
+      "names": [
+        "full_prep"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-code-prepositions",
+          "mode": "source-walkthrough"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#59:19",
+      "utility": "code",
+      "names": [
+        "get_prep"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-code-prepositions",
+          "mode": "source-walkthrough"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#59:20",
+      "utility": "code",
+      "names": [
+        "_fix_preps"
+      ],
+      "classification": "reference-only",
+      "reason": "Internal preposition cache rebuild, reached through public preposition helpers.",
+      "lessons": []
+    },
+    {
+      "sourceVerbId": "#59:21",
+      "utility": "code",
+      "names": [
+        "find_verb_named"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-code-names",
+          "mode": "browser"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#59:22",
+      "utility": "code",
+      "names": [
+        "find_last_verb_named"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-code-names",
+          "mode": "browser"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#59:23",
+      "utility": "code",
+      "names": [
+        "find_callable_verb_named"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-code-names",
+          "mode": "browser"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#59:24",
+      "utility": "code",
+      "names": [
+        "find_verbs_containing",
+        "find_verbs_matching",
+        "find_verb_lines_containing",
+        "find_verb_lines_matching"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-code-source-search",
+          "mode": "source-walkthrough"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#59:25",
+      "utility": "code",
+      "names": [
+        "_find_verbs_containing",
+        "_find_verbs_matching"
+      ],
+      "classification": "reference-only",
+      "reason": "Internal worker for public source search.",
+      "lessons": []
+    },
+    {
+      "sourceVerbId": "#59:26",
+      "utility": "code",
+      "names": [
+        "_grep_verb_code"
+      ],
+      "classification": "reference-only",
+      "reason": "Internal literal-source search implementation.",
+      "lessons": []
+    },
+    {
+      "sourceVerbId": "#59:27",
+      "utility": "code",
+      "names": [
+        "_egrep_verb_code"
+      ],
+      "classification": "reference-only",
+      "reason": "Internal regular-expression source search implementation.",
+      "lessons": []
+    },
+    {
+      "sourceVerbId": "#59:28",
+      "utility": "code",
+      "names": [
+        "_parse_audit_args"
+      ],
+      "classification": "reference-only",
+      "reason": "Internal parser for audit commands, not a standalone code utility interface.",
+      "lessons": []
+    },
+    {
+      "sourceVerbId": "#59:29",
+      "utility": "code",
+      "names": [
+        "help_db_list"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-code-help",
+          "mode": "browser"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#59:30",
+      "utility": "code",
+      "names": [
+        "help_db_search"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-code-help",
+          "mode": "browser"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#59:31",
+      "utility": "code",
+      "names": [
+        "corify_object"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-code-references",
+          "mode": "browser"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#59:32",
+      "utility": "code",
+      "names": [
+        "inside_quotes"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-code-substitution",
+          "mode": "browser"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#59:33",
+      "utility": "code",
+      "names": [
+        "verb_or_property"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-code-accessors",
+          "mode": "browser"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#59:34",
+      "utility": "code",
+      "names": [
+        "task_valid"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-code-tasks",
+          "mode": "source-walkthrough"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#59:35",
+      "utility": "code",
+      "names": [
+        "task_owner"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-code-tasks",
+          "mode": "source-walkthrough"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#59:36",
+      "utility": "code",
+      "names": [
+        "argstr"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-code-arguments",
+          "mode": "browser"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#59:37",
+      "utility": "code",
+      "names": [
+        "verbname_match"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-code-names",
+          "mode": "browser"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#59:38",
+      "utility": "code",
+      "names": [
+        "substitute"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-code-substitution",
+          "mode": "browser"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#59:39",
+      "utility": "code",
+      "names": [
+        "show_who_listing"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-code-who-report",
+          "mode": "source-walkthrough"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#59:40",
+      "utility": "code",
+      "names": [
+        "_egrep_verb_code_all"
+      ],
+      "classification": "reference-only",
+      "reason": "Internal all-lines regex worker used by public source search.",
+      "lessons": []
+    },
+    {
+      "sourceVerbId": "#59:41",
+      "utility": "code",
+      "names": [
+        "_grep_verb_code_all"
+      ],
+      "classification": "reference-only",
+      "reason": "Internal all-lines literal worker used by public source search.",
+      "lessons": []
+    },
+    {
+      "sourceVerbId": "#59:42",
+      "utility": "code",
+      "names": [
+        "verb_usage"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-code-documentation",
+          "mode": "source-walkthrough"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#59:43",
+      "utility": "code",
+      "names": [
+        "verb_frame"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-code-stack",
+          "mode": "source-walkthrough"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#59:44",
+      "utility": "code",
+      "names": [
+        "verb_all_frames"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-code-stack",
+          "mode": "source-walkthrough"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#59:45",
+      "utility": "code",
+      "names": [
+        "move_verb"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-code-move-members",
+          "mode": "source-walkthrough"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#59:46",
+      "utility": "code",
+      "names": [
+        "move_prop*erty"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-code-move-members",
+          "mode": "source-walkthrough"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#59:47",
+      "utility": "code",
+      "names": [
+        "eval_d_util"
+      ],
+      "classification": "reference-only",
+      "reason": "Mutable auxiliary implementation of eval_d(); never call directly.",
+      "lessons": []
+    },
+    {
+      "sourceVerbId": "#59:48",
+      "utility": "code",
+      "names": [
+        "display_callers"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-code-formatted-stack",
+          "mode": "source-walkthrough"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#59:49",
+      "utility": "code",
+      "names": [
+        "callers_text"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-code-formatted-stack",
+          "mode": "source-walkthrough"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#59:50",
+      "utility": "code",
+      "names": [
+        "set_property_value",
+        "set_verb_or_property"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-code-accessors",
+          "mode": "browser"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#59:51",
+      "utility": "code",
+      "names": [
+        "owns_task"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-code-tasks",
+          "mode": "source-walkthrough"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#59:52",
+      "utility": "code",
+      "names": [
+        "dflag_on"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-code-stack",
+          "mode": "source-walkthrough"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#59:53",
+      "utility": "code",
+      "names": [
+        "type_str"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-code-types",
+          "mode": "browser"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#59:54",
+      "utility": "code",
+      "names": [
+        "dump_properties"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-code-dump",
+          "mode": "source-walkthrough"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#59:55",
+      "utility": "code",
+      "names": [
+        "dump_preamble"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-code-dump",
+          "mode": "source-walkthrough"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#59:56",
+      "utility": "code",
+      "names": [
+        "dump_verbs"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-code-dump",
+          "mode": "source-walkthrough"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#59:57",
+      "utility": "code",
+      "names": [
+        "_find_verb_lines_containing",
+        "_find_verb_lines_matching"
+      ],
+      "classification": "reference-only",
+      "reason": "Internal source-search reporting worker.",
+      "lessons": []
+    },
+    {
+      "sourceVerbId": "#59:58",
+      "utility": "code",
+      "names": [
+        "commentify"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-code-comments",
+          "mode": "browser"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#59:59",
+      "utility": "code",
+      "names": [
+        "parse_sysobj_map"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-code-references",
+          "mode": "browser"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#59:60",
+      "utility": "code",
+      "names": [
+        "uncommentify"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-code-comments",
+          "mode": "browser"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#91:0",
+      "utility": "matrix",
+      "names": [
+        "vector_add",
+        "vector_sub",
+        "vector_mul",
+        "vector_div"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-matrix-vectors",
+          "mode": "browser"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#91:1",
+      "utility": "matrix",
+      "names": [
+        "matrix_add",
+        "matrix_sub"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-matrix-matrix-arithmetic",
+          "mode": "source-walkthrough"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#91:2",
+      "utility": "matrix",
+      "names": [
+        "transpose"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-matrix-transpose",
+          "mode": "browser"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#91:3",
+      "utility": "matrix",
+      "names": [
+        "determinant"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-matrix-determinants",
+          "mode": "browser"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#91:4",
+      "utility": "matrix",
+      "names": [
+        "inverse"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-matrix-inverse",
+          "mode": "browser"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#91:5",
+      "utility": "matrix",
+      "names": [
+        "identity"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-matrix-identity",
+          "mode": "browser"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#91:6",
+      "utility": "matrix",
+      "names": [
+        "null"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-matrix-identity",
+          "mode": "browser"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#91:7",
+      "utility": "matrix",
+      "names": [
+        "is_square"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-matrix-identity",
+          "mode": "browser"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#91:8",
+      "utility": "matrix",
+      "names": [
+        "is_null"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-matrix-identity",
+          "mode": "browser"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#91:9",
+      "utility": "matrix",
+      "names": [
+        "is_identity"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-matrix-identity",
+          "mode": "browser"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#91:10",
+      "utility": "matrix",
+      "names": [
+        "cross_prod",
+        "outer_prod",
+        "vector_prod"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-matrix-determinants",
+          "mode": "browser"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#91:11",
+      "utility": "matrix",
+      "names": [
+        "norm",
+        "length"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-matrix-dot",
+          "mode": "browser"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#91:12",
+      "utility": "matrix",
+      "names": [
+        "submatrix"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-matrix-transpose",
+          "mode": "browser"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#91:13",
+      "utility": "matrix",
+      "names": [
+        "dot_prod",
+        "inner_prod",
+        "scalar_prod"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-matrix-dot",
+          "mode": "browser"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#91:14",
+      "utility": "matrix",
+      "names": [
+        "dimension*s"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-matrix-shape",
+          "mode": "browser"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#91:15",
+      "utility": "matrix",
+      "names": [
+        "order"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-matrix-shape",
+          "mode": "browser"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#91:16",
+      "utility": "matrix",
+      "names": [
+        "scalar_vector_add",
+        "scalar_vector_sub",
+        "scalar_vector_mul",
+        "scalar_vector_div"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-matrix-vectors",
+          "mode": "browser"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#91:17",
+      "utility": "matrix",
+      "names": [
+        "subtended_angle"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-matrix-dot",
+          "mode": "browser"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#91:18",
+      "utility": "matrix",
+      "names": [
+        "column"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-matrix-transpose",
+          "mode": "browser"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#91:19",
+      "utility": "matrix",
+      "names": [
+        "matrix_mul"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-matrix-inverse",
+          "mode": "browser"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#91:20",
+      "utility": "matrix",
+      "names": [
+        "scalar_matrix_mul",
+        "scalar_matrix_div"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-matrix-matrix-arithmetic",
+          "mode": "source-walkthrough"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#91:21",
+      "utility": "matrix",
+      "names": [
+        "is_matrix"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-matrix-shape",
+          "mode": "browser"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#91:22",
+      "utility": "matrix",
+      "names": [
+        "is_vector"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-matrix-shape",
+          "mode": "browser"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#91:23",
+      "utility": "matrix",
+      "names": [
+        "is_reflexive",
+        "is_areflexive"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-matrix-relations",
+          "mode": "browser"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#91:24",
+      "utility": "matrix",
+      "names": [
+        "is_symmetric",
+        "is_asymmetric"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-matrix-relations",
+          "mode": "browser"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#91:25",
+      "utility": "matrix",
+      "names": [
+        "is_transitive",
+        "is_atransitive"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-matrix-relations",
+          "mode": "browser"
+        }
+      ]
+    },
+    {
+      "sourceVerbId": "#91:26",
+      "utility": "matrix",
+      "names": [
+        "_relation_result"
+      ],
+      "classification": "reference-only",
+      "reason": "Internal result helper shared by the relation predicates; their public lessons explicitly discuss its observed limitation.",
+      "lessons": []
+    },
+    {
+      "sourceVerbId": "#91:27",
+      "utility": "matrix",
+      "names": [
+        "is_partial_ordering"
+      ],
+      "classification": "taught",
+      "reason": null,
+      "lessons": [
+        {
+          "id": "utility-matrix-relations",
+          "mode": "browser"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "source": {
+    "repository": "https://github.com/lisdude/toastcore",
+    "commit": "4b6a94d45e7bc5e207682204cd8047992c0af8e3",
+    "sha256": "75d074db6353f2e9833097072f5e59a117cd2147c43ae9b176f7992b913824d7",
+    "graphCommit": "4b8950a55d6ceee5d2444e2c6d0f94328fcced3d",
+    "extractorVersion": "0.1.4"
+  },
+  "network": "127.0.0.1 only; outbound disabled; disposable database",
+  "checks": [
+    "command read + yes_or_no with real socket input",
+    "suspend(0) resumes and replenishes ticks",
+    "native suspended list helpers resume and return documented values",
+    "read_lines_escape preserves escaped periods and returns custom terminator"
+  ],
+  "transcript": "*** Connected ***\r\nI couldn't understand that.\r\nBEGIN input\r\nREADING flag before: 0\r\n[Type a room name or `@abort' to abort the command.]\r\nTOOL response: \"brush\"\r\nKeep this tool? [Enter `yes' or `no']\r\nCONFIRMED: E_NONE\r\nBEGIN yield\r\nYIELD balances: {79958, 79999}\r\nSORT_SUSPENDED: {1, 2, 3}\r\nASSOC_SUSPENDED: {\"saw\", 2}\r\nIASSOC_SUSPENDED: 2\r\nREVERSE_SUSPENDED: {4, 3, 2, 1}\r\nFLATTEN_SUSPENDED: {1, 2, 3}\r\nBEGIN escape\r\n[Type lines of input; `?' for help; end with `.', `@abort' or `done'.]\r\nESCAPE response: {\"done\", {\"brush\", \".\"}}\r\nUTILITY COMPLETE\r\n"
+}

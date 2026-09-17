@@ -1,0 +1,25 @@
+node_modules/
+/vendor/*
+!/vendor/packages/
+/vendor/packages/*
+!/vendor/packages/moo-in-javascript-0.2.3.tgz
+test-results*/
+playwright-report/
+coverage/
+
+.cache/
+
+# Atomic observation publication scratch files
+*.tmp-*
+
+# Local history, working notes, and machine-specific configuration
+/.local-backup/
+/.agents/
+/.codex/
+/.openai/
+/.brooks-lint-history.json
+*.log
+/*.zip
+.DS_Store
+__pycache__/
+*.pyc

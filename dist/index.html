@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="An interactive, hands-on introduction to MOO programming." />
+  <title>MOO Academy</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%230a1210'/%3E%3Cpath d='M14 47V18h8l10 16 10-16h8v29h-7V29L32 45 21 29v18z' fill='%237cf2a0'/%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="styles.css?v=starting-state-1" />
+</head>
+<body>
+  <aside id="startupNotice" class="startup-notice" aria-label="Workspace loading">
+    <div role="status" aria-live="polite" aria-atomic="true">
+      <strong id="startupTitle">Loading workspace…</strong>
+      <p id="startupMessage">Preparing the editor. Typing and Run will be available when your saved world is ready.</p>
+    </div>
+    <a href="">Reload page</a>
+  </aside>
+  <header class="topbar">
+    <a class="brand" href="#">MOO<span>//</span>ACADEMY</a>
+    <label class="mode-control" for="workspaceMode">WORKSPACE
+      <select id="workspaceMode" disabled><option value="training">Training</option><option value="sandbox">Sandbox</option></select>
+    </label>
+    <label class="mode-control" id="sandboxWorldControl" for="sandboxWorld" hidden>WORLD<select id="sandboxWorld" disabled></select></label>
+    <div class="profile-controls">
+      <label class="mode-control" for="runtimeProfileSelect">PROFILE
+        <select id="runtimeProfileSelect" disabled><option value="lambdamoo">LambdaMOO</option><option value="toaststunt" selected>ToastStunt</option></select>
+      </label>
+      <details class="profile-help"><summary aria-label="About LambdaMOO and ToastStunt">?</summary>
+        <div class="profile-help-content">
+          <h2>LambdaMOO and ToastStunt</h2>
+          <p>ToastStunt extends LambdaMOO. Choose a profile to change execution and the available examples in this educational runtime.</p>
+          <table><thead><tr><th>Feature</th><th>LambdaMOO</th><th>ToastStunt</th></tr></thead><tbody>
+            <tr><td>Integers</td><td>Signed 32-bit</td><td>Signed 64-bit</td></tr>
+            <tr><td>Maps and map builtins</td><td>Unavailable</td><td>Available</td></tr>
+            <tr><td>index / rindex offset argument</td><td>Unavailable</td><td>Available</td></tr>
+            <tr><td>Right side of <code>in</code></td><td>Lists</td><td>Lists, strings, map values</td></tr>
+            <tr><td><code>-5 % 3</code></td><td>-2</td><td>1</td></tr>
+          </tbody></table>
+          <p>Every track and the sandbox has its own saved world for each profile. Lesson drafts are saved separately. Switching saves your work first. Reset track world or Reset sandbox world resets only the active track or sandbox. Load lesson starting world loads that lesson’s prepared starting checkpoint. Import a world using the profile that exported it. Lesson progress is shared.</p>
+          <p>These are educational subsets, not full MOO servers. General permission enforcement, command dispatch and task scheduling are unavailable. Networking examples use explicit simulations or configured responses. Both profiles use the same comments, implicit returns, and truthiness rules taught here.</p>
+        </div>
+      </details>
+    </div>
+    <nav class="site-links" aria-label="Site navigation">
+      <a href="introduction.html">Introduction</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="header-meta"><span class="status-dot"></span> EXECUTION LAB <span id="progressText">0 / 10 LESSONS</span></div>
+  </header>
+
+  <div class="current-lesson"><button id="browseLessons" aria-haspopup="dialog">Browse lessons</button><span id="currentLesson"></span></div>
+  <div id="saveNotice" hidden><span role="status" id="saveNoticeText"></span><button id="recoverWorkspace">Open save recovery</button></div>
+  <dialog id="lessonDrawer" aria-label="Browse lessons"><button id="closeDrawer">Close lessons</button><div id="drawerContent"></div></dialog>
+  <main class="shell" aria-busy="true">
+    <aside class="rail" aria-label="Lessons">
+      <label class="rail-title" for="trackSelect">TRAINING TRACK</label>
+      <select id="trackSelect" disabled><option value="foundations">Foundations</option><option value="builtins">Builtins · 217 runnable examples</option></select>
+      <p id="pathSummary" class="path-summary"></p><label class="rail-title" for="lessonSearch">FIND A LESSON</label><input id="lessonSearch" type="search" placeholder="Title, topic or builtin" /><nav id="lessonNav"></nav><a class="field-notes-link" href="field-notes.html" target="_blank" rel="noopener">Beyond the playground ↗</a>
+      <button class="reset" id="resetProgress">RESET PROGRESS</button>
+    </aside>
+
+    <section class="workspace">
+      <div class="lesson-pane" id="lessonPanel">
+        <div class="lesson-heading">
+          <span class="lesson-number" id="lessonNumber">01</span>
+          <div><div class="eyebrow" id="lessonEyebrow">FOUNDATIONS</div><h1 id="lessonTitle">Objects are the world</h1></div>
+        </div>
+        <div id="lessonBody" class="lesson-body"></div>
+        <aside id="lessonWarning" class="lesson-warning" role="note" hidden></aside>
+        <div class="concept-map" id="conceptMap"></div>
+        <div class="task-card">
+          <div class="task-label" id="taskLabel">YOUR OBJECTIVE</div>
+          <details id="startingRequirements" open hidden>
+            <summary>Starting State</summary>
+            <p id="startingState" class="starting-state" hidden></p>
+            <p class="starting-state">If you’re completing the guided lessons in order, keep using your current world—you do not need to load a starting world for each lesson. Load one only if you skipped ahead, experiments changed the required state, or you want a fresh start. Loading replaces this track’s world while keeping your code and progress.</p>
+          </details>
+          <div id="challengeText" class="lesson-instructions"></div>
+          <section id="starterResult" class="result-card"></section><section id="experiment" class="lesson-instructions"></section><section id="serverExercise" class="lesson-instructions" hidden></section><button id="openCode" class="secondary">Open code</button>
+          <div class="hint lesson-instructions" id="hintBox" hidden></div>
+          <button class="text-button" id="hintButton">SHOW HINT</button>
+        </div>
+          <details id="checkpointControls" class="checkpoint-controls">
+            <summary>Lesson options</summary>
+            <p>Your world carries over between lessons in this track. If you’re completing the guided lessons in order, you do not need to load a starting world each time. Loading is optional: use it if you skipped ahead, experiments changed the required state, or you want a fresh start.</p>
+            <p>This replaces this track’s world. Your code, progress, and other saved worlds are kept.</p>
+            <button id="resetLessonWorld">Load lesson starting world</button>
+          </details>
+        <div class="lesson-actions">
+          <button class="secondary" id="prevButton">← PREVIOUS</button>
+          <button class="secondary" id="nextButton">NEXT LESSON →</button>
+        </div>
+      </div>
+
+      <div class="lab-pane">
+        <div class="panel-tabs" role="tablist" aria-label="Workspace views">
+          <button class="tab" role="tab" data-tab="lesson">Lesson</button>
+          <button class="tab active" role="tab" data-tab="editor">Code</button>
+          <button class="tab" role="tab" data-tab="world">World</button>
+          <button class="tab" role="tab" data-tab="eval">Eval</button>
+          <button class="tab" role="tab" data-tab="reference">Reference</button>
+        </div>
+        <div id="editorPanel">
+          <div class="editor-bar"><span id="verbName">#42:describe</span><span>r d</span></div>
+          <div class="editor-wrap">
+            <div class="line-numbers" id="lineNumbers">1</div>
+            <textarea id="codeEditor" disabled maxlength="100000" spellcheck="false" aria-label="MOO code editor"></textarea>
+          </div>
+          <div id="syntaxStatus" role="status">Loading syntax parser…</div>
+          <div class="terminal" aria-live="polite">
+            <div class="terminal-title"><span>FEEDBACK</span><button id="clearOutput">CLEAR</button></div>
+            <div id="output"><span class="dim">Loading syntax parser…</span></div>
+          </div>
+          <div class="context-strip"><span id="runtimeProfile"></span> · <span id="executionContext"></span><button id="inspectWorld">Inspect execution object</button></div>
+          <details class="runtime-help"><summary>Execution help</summary><p id="trainingNote">Each track keeps a separate world per profile. Changes persist between runs. Objectives are checked in separate prepared worlds.</p><p id="sandboxNote" hidden>Each named sandbox saves its world and draft separately for each profile and from training tracks. There are no lesson checks.</p><p>Stop discards the active run’s changes. The inspector shows committed state. This educational runtime does not provide general permission enforcement or command dispatch.</p></details>
+          <p class="persistence-status" role="status">Loading saved workspace…</p>
+          <p class="workspace-problem" role="alert" hidden></p>
+          <p id="executionAccess" class="execution-access" role="status" hidden></p>
+          <div class="runbar">
+            <span>Ctrl/⌘↵ to run</span>
+            <button id="restoreExample" hidden>RESTORE EXAMPLE</button><button id="stopButton" hidden disabled>STOP</button><button id="runButton" disabled>RUN CODE</button>
+          </div>
+          <details class="world-management"><summary>World management</summary><p>Reset restores this workspace to its beginning and keeps code and progress.</p><button id="resetWorld" disabled>Reset track world</button><button id="manageWorld">Import, export and recovery</button></details>
+        </div>
+        <div id="evalPanel" hidden>
+          <div class="runbar eval-runbar"><span>Ctrl/⌘↵ to evaluate</span><button id="evalStop" hidden disabled>STOP</button><button id="evalRun" disabled>EVALUATE</button></div>
+          <div class="eval-intro">
+            <h2>Evaluate MOO code</h2>
+            <p>Run a quick expression or several statements. An initial <code>;</code> is optional. Use <code>return</code> to choose a result; a final expression or simple assignment returns its value automatically.</p>
+            <p>Each evaluation starts with fresh local variables. World changes carry over to Code and World in this workspace; Eval does not complete lessons.</p>
+            <label for="evalEditor">MOO code to evaluate</label>
+          </div>
+          <textarea id="evalEditor" maxlength="100000" spellcheck="false" disabled placeholder=";a = 1; b = 2; c = 3;"></textarea>
+          <div class="context-strip"><span id="evalContext"></span><button id="evalInspect">Inspect execution object</button></div>
+          <p class="persistence-status" role="status">Loading saved workspace…</p>
+          <p class="workspace-problem" role="alert" hidden></p>
+          <p id="evalAccess" class="execution-access" role="status" hidden></p>
+          <div class="terminal eval-terminal" aria-live="polite">
+            <div class="terminal-title"><span>EVAL RESULT</span><button id="evalClear">CLEAR</button></div>
+            <div id="evalOutput"></div>
+          </div>
+        </div>
+        <div id="worldPanel" hidden></div>
+        <div id="referencePanel" hidden>
+          <h2 class="reference-heading">Language and context</h2>
+          <div class="reference-grid" id="referenceGrid"></div>
+          <section id="utilityReference"></section>
+          <h2 class="reference-heading" id="builtinReferenceStatus" role="status">Loading builtin reference…</h2>
+          <div class="reference-grid" id="builtinReferenceGrid"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <div class="toast" id="toast" hidden></div>
+  <script type="module" src="app.js?v=utility-courses-1"></script>
+</body>
+</html>

@@ -1,0 +1,1028 @@
+{
+  "id": "common-packages",
+  "name": "Common Packages",
+  "profile": "toaststunt",
+  "source": {
+    "repository": "https://github.com/lisdude/toastcore",
+    "commit": "4b6a94d45e7bc5e207682204cd8047992c0af8e3",
+    "sha256": "75d074db6353f2e9833097072f5e59a117cd2147c43ae9b176f7992b913824d7",
+    "graphCommit": "4b8950a55d6ceee5d2444e2c6d0f94328fcced3d",
+    "extractorVersion": "0.1.4"
+  },
+  "context": {
+    "this": 128,
+    "player": 127,
+    "caller": 127
+  },
+  "worldLimits": {
+    "objects": 2000,
+    "properties": 20000,
+    "verbs": 10000,
+    "valueNodes": 500000,
+    "stringUnits": 4000000,
+    "inheritanceDepth": 100
+  },
+  "unsupportedSourcePolicy": "retain",
+  "utilities": [
+    {
+      "objectId": 20,
+      "id": "string",
+      "title": "String utilities",
+      "aliases": [
+        "$string_utils"
+      ],
+      "verbCount": 79
+    },
+    {
+      "objectId": 55,
+      "id": "list",
+      "title": "List utilities",
+      "aliases": [
+        "$list_utils"
+      ],
+      "verbCount": 43
+    },
+    {
+      "objectId": 27,
+      "id": "set",
+      "title": "Set utilities",
+      "aliases": [
+        "$set_utils"
+      ],
+      "verbCount": 8
+    },
+    {
+      "objectId": 26,
+      "id": "math",
+      "title": "Math utilities",
+      "aliases": [
+        "$math_utils",
+        "$trig_utils"
+      ],
+      "verbCount": 40
+    },
+    {
+      "objectId": 91,
+      "id": "matrix",
+      "title": "Vector and matrix utilities",
+      "aliases": [
+        "$matrix_utils"
+      ],
+      "verbCount": 28
+    },
+    {
+      "objectId": 43,
+      "id": "time",
+      "title": "Time utilities",
+      "aliases": [
+        "$time_utils"
+      ],
+      "verbCount": 18
+    },
+    {
+      "objectId": 52,
+      "id": "object",
+      "title": "Object utilities",
+      "aliases": [
+        "$object_utils"
+      ],
+      "verbCount": 31
+    },
+    {
+      "objectId": 51,
+      "id": "match",
+      "title": "Matching utilities",
+      "aliases": [
+        "$match_utils"
+      ],
+      "verbCount": 8
+    },
+    {
+      "objectId": 56,
+      "id": "command",
+      "title": "Command utilities",
+      "aliases": [
+        "$command_utils"
+      ],
+      "verbCount": 17
+    },
+    {
+      "objectId": 59,
+      "id": "code",
+      "title": "Code utilities",
+      "aliases": [
+        "$code_utils"
+      ],
+      "verbCount": 61
+    },
+    {
+      "objectId": 24,
+      "id": "wiz",
+      "title": "Wizard utilities",
+      "aliases": [
+        "$wiz_utils"
+      ],
+      "verbCount": 42
+    }
+  ],
+  "objects": [
+    {
+      "id": 0,
+      "name": "The System Object",
+      "reasons": [
+        "system aliases"
+      ]
+    },
+    {
+      "id": 1,
+      "name": "Root Class",
+      "reasons": [
+        "root"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Wizard",
+      "reasons": [
+        "source owner"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Generic Room",
+      "reasons": [
+        "teaching room parent"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Generic Builder",
+      "reasons": [
+        "property #0.builder"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Generic Thing",
+      "reasons": [
+        "property #0.thing"
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Generic Player",
+      "reasons": [
+        "teaching player parent"
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Generic Exit",
+      "reasons": [
+        "property #0.exit"
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Generic Container",
+      "reasons": [
+        "property #0.container"
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Generic Note",
+      "reasons": [
+        "property #0.note"
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Login Commands",
+      "reasons": [
+        "code reference #56:8"
+      ]
+    },
+    {
+      "id": 11,
+      "name": "Player Last_huh Verbs",
+      "reasons": [
+        "property #0.last_huh"
+      ]
+    },
+    {
+      "id": 12,
+      "name": "Guest Log",
+      "reasons": [
+        "property #0.guest_log"
+      ]
+    },
+    {
+      "id": 13,
+      "name": "Generic BigList Utilities",
+      "reasons": [
+        "property #0.biglist"
+      ]
+    },
+    {
+      "id": 14,
+      "name": "Generic Large-Capacity Mail Recipient",
+      "reasons": [
+        "property #0.big_mail_recipient"
+      ]
+    },
+    {
+      "id": 15,
+      "name": "Limbo",
+      "reasons": [
+        "property #0.limbo"
+      ]
+    },
+    {
+      "id": 16,
+      "name": "Registration Database",
+      "reasons": [
+        "code reference #24:20"
+      ]
+    },
+    {
+      "id": 17,
+      "name": "Player-Creation-Log",
+      "reasons": [
+        "code reference #24:23"
+      ]
+    },
+    {
+      "id": 18,
+      "name": "Verb Help DB",
+      "reasons": [
+        "property #0.help_db"
+      ]
+    },
+    {
+      "id": 19,
+      "name": "Core Utility Help",
+      "reasons": [
+        "property #0.help_db"
+      ]
+    },
+    {
+      "id": 20,
+      "name": "String Utilities",
+      "reasons": [
+        "requested utility"
+      ]
+    },
+    {
+      "id": 21,
+      "name": "Building Utilities",
+      "reasons": [
+        "property #0.building_utils"
+      ]
+    },
+    {
+      "id": 22,
+      "name": "Programmer Help",
+      "reasons": [
+        "property #0.help_db"
+      ]
+    },
+    {
+      "id": 23,
+      "name": "Wizard Help",
+      "reasons": [
+        "property #0.help_db"
+      ]
+    },
+    {
+      "id": 24,
+      "name": "Wizard Utilities",
+      "reasons": [
+        "requested utility"
+      ]
+    },
+    {
+      "id": 25,
+      "name": "Site DB",
+      "reasons": [
+        "code reference #24:19"
+      ]
+    },
+    {
+      "id": 26,
+      "name": "Math Utilities",
+      "reasons": [
+        "requested utility"
+      ]
+    },
+    {
+      "id": 27,
+      "name": "Set Utilities",
+      "reasons": [
+        "requested utility"
+      ]
+    },
+    {
+      "id": 28,
+      "name": "Builtin Function Help",
+      "reasons": [
+        "property #0.help_db"
+      ]
+    },
+    {
+      "id": 29,
+      "name": "New-Prog-Log",
+      "reasons": [
+        "code reference #24:0"
+      ]
+    },
+    {
+      "id": 30,
+      "name": "Generic Help Database",
+      "reasons": [
+        "property #0.generic_help"
+      ]
+    },
+    {
+      "id": 31,
+      "name": "Generic Guest",
+      "reasons": [
+        "code reference #24:27"
+      ]
+    },
+    {
+      "id": 32,
+      "name": "Mr. Spell",
+      "reasons": [
+        "property #0.spell"
+      ]
+    },
+    {
+      "id": 33,
+      "name": "Sequence Utilities",
+      "reasons": [
+        "property #0.seq_utils"
+      ]
+    },
+    {
+      "id": 34,
+      "name": "Quota-Log",
+      "reasons": [
+        "property #0.quota_log"
+      ]
+    },
+    {
+      "id": 35,
+      "name": "You",
+      "reasons": [
+        "property #0.you"
+      ]
+    },
+    {
+      "id": 36,
+      "name": "Hacker",
+      "reasons": [
+        "property owner #20.use_article_a"
+      ]
+    },
+    {
+      "id": 37,
+      "name": "Generic Database",
+      "reasons": [
+        "code reference #20:20"
+      ]
+    },
+    {
+      "id": 38,
+      "name": "Everyman",
+      "reasons": [
+        "code reference #20:34"
+      ]
+    },
+    {
+      "id": 39,
+      "name": "Player Database",
+      "reasons": [
+        "code reference #20:20"
+      ]
+    },
+    {
+      "id": 40,
+      "name": "Generic Mail Receiving Player",
+      "reasons": [
+        "code reference #24:21"
+      ]
+    },
+    {
+      "id": 41,
+      "name": "Gender Utilities",
+      "reasons": [
+        "code reference #20:34"
+      ]
+    },
+    {
+      "id": 42,
+      "name": "Permissions Utilities",
+      "reasons": [
+        "code reference #52:12"
+      ]
+    },
+    {
+      "id": 43,
+      "name": "Time Utilities",
+      "reasons": [
+        "requested utility"
+      ]
+    },
+    {
+      "id": 44,
+      "name": "Editor Help",
+      "reasons": [
+        "property #0.help_db"
+      ]
+    },
+    {
+      "id": 45,
+      "name": "Generic Mail Recipient",
+      "reasons": [
+        "code reference #24:37"
+      ]
+    },
+    {
+      "id": 46,
+      "name": "Mail Distribution Center",
+      "reasons": [
+        "code reference #20:16"
+      ]
+    },
+    {
+      "id": 47,
+      "name": "Mail Room",
+      "reasons": [
+        "code reference #24:38"
+      ]
+    },
+    {
+      "id": 48,
+      "name": "Note Editor",
+      "reasons": [
+        "code reference #24:38"
+      ]
+    },
+    {
+      "id": 49,
+      "name": "Verb Editor",
+      "reasons": [
+        "code reference #24:38"
+      ]
+    },
+    {
+      "id": 50,
+      "name": "Generic Editor",
+      "reasons": [
+        "property #0.generic_editor"
+      ]
+    },
+    {
+      "id": 51,
+      "name": "Matching Utilities",
+      "reasons": [
+        "requested utility"
+      ]
+    },
+    {
+      "id": 52,
+      "name": "Object Utilities",
+      "reasons": [
+        "requested utility"
+      ]
+    },
+    {
+      "id": 53,
+      "name": "Lock Utilities",
+      "reasons": [
+        "property #0.lock_utils"
+      ]
+    },
+    {
+      "id": 54,
+      "name": "Generic Letter",
+      "reasons": [
+        "property #0.letter"
+      ]
+    },
+    {
+      "id": 55,
+      "name": "List Utilities",
+      "reasons": [
+        "requested utility"
+      ]
+    },
+    {
+      "id": 56,
+      "name": "Command Utilities",
+      "reasons": [
+        "requested utility"
+      ]
+    },
+    {
+      "id": 57,
+      "name": "Generic Wizard",
+      "reasons": [
+        "code reference #24:12"
+      ]
+    },
+    {
+      "id": 58,
+      "name": "Generic Programmer",
+      "reasons": [
+        "code reference #24:0"
+      ]
+    },
+    {
+      "id": 59,
+      "name": "Code Utilities",
+      "reasons": [
+        "requested utility"
+      ]
+    },
+    {
+      "id": 60,
+      "name": "Help Database",
+      "reasons": [
+        "code reference #59:29"
+      ]
+    },
+    {
+      "id": 61,
+      "name": "News",
+      "reasons": [
+        "property #0.news"
+      ]
+    },
+    {
+      "id": 62,
+      "name": "The First Room",
+      "reasons": [
+        "code reference #24:21"
+      ]
+    },
+    {
+      "id": 63,
+      "name": "Recycling Center",
+      "reasons": [
+        "code reference #59:50"
+      ]
+    },
+    {
+      "id": 64,
+      "name": "Telnet Handler",
+      "reasons": [
+        "property #0.telnet"
+      ]
+    },
+    {
+      "id": 65,
+      "name": "Mail Options",
+      "reasons": [
+        "property #0.options"
+      ]
+    },
+    {
+      "id": 66,
+      "name": "Edit Options",
+      "reasons": [
+        "property #0.options"
+      ]
+    },
+    {
+      "id": 67,
+      "name": "Display Options",
+      "reasons": [
+        "property #0.options"
+      ]
+    },
+    {
+      "id": 68,
+      "name": "Generic Option Package",
+      "reasons": [
+        "property #0.generic_options"
+      ]
+    },
+    {
+      "id": 69,
+      "name": "Error Generator",
+      "reasons": [
+        "code reference #24:30"
+      ]
+    },
+    {
+      "id": 70,
+      "name": "Site-Locks",
+      "reasons": [
+        "code reference #24:30"
+      ]
+    },
+    {
+      "id": 71,
+      "name": "Housekeeper",
+      "reasons": [
+        "code reference #24:17"
+      ]
+    },
+    {
+      "id": 72,
+      "name": "Network Utilities",
+      "reasons": [
+        "code reference #24:20"
+      ]
+    },
+    {
+      "id": 73,
+      "name": "Generic BigList Resident",
+      "reasons": [
+        "property #0.generic_biglist_home"
+      ]
+    },
+    {
+      "id": 74,
+      "name": "Generic Feature Object",
+      "reasons": [
+        "property #0.feature"
+      ]
+    },
+    {
+      "id": 75,
+      "name": "Shapes Object Serialization Library",
+      "reasons": [
+        "property #0.shapes"
+      ]
+    },
+    {
+      "id": 76,
+      "name": "Programmer Options",
+      "reasons": [
+        "property #0.options"
+      ]
+    },
+    {
+      "id": 77,
+      "name": "Builder Options",
+      "reasons": [
+        "property #0.options"
+      ]
+    },
+    {
+      "id": 78,
+      "name": "Generic Utilities Package",
+      "reasons": [
+        "structure of #20"
+      ]
+    },
+    {
+      "id": 79,
+      "name": "Byte Quota Utilities",
+      "reasons": [
+        "code reference #24:0"
+      ]
+    },
+    {
+      "id": 80,
+      "name": "@paranoid Database",
+      "reasons": [
+        "property #0.paranoid_db"
+      ]
+    },
+    {
+      "id": 81,
+      "name": "Object Quota Utilities",
+      "reasons": [
+        "property #0.object_quota_utils"
+      ]
+    },
+    {
+      "id": 82,
+      "name": "Server Options",
+      "reasons": [
+        "property #0.server_options"
+      ]
+    },
+    {
+      "id": 83,
+      "name": "Feature Warehouse",
+      "reasons": [
+        "property #0.feature_warehouse"
+      ]
+    },
+    {
+      "id": 84,
+      "name": "Builder Help DB",
+      "reasons": [
+        "property #0.help_db"
+      ]
+    },
+    {
+      "id": 85,
+      "name": "Mail Commands Help Db",
+      "reasons": [
+        "property #0.help_db"
+      ]
+    },
+    {
+      "id": 86,
+      "name": "ToastStunt Help Database",
+      "reasons": [
+        "property #0.help_db"
+      ]
+    },
+    {
+      "id": 87,
+      "name": "Password Verifier",
+      "reasons": [
+        "property #0.password_verifier"
+      ]
+    },
+    {
+      "id": 88,
+      "name": "Frand's Player Class",
+      "reasons": [
+        "property #0.frand_class"
+      ]
+    },
+    {
+      "id": 89,
+      "name": "Stage-Talk Feature",
+      "reasons": [
+        "property #0.stage_talk"
+      ]
+    },
+    {
+      "id": 90,
+      "name": "Pasting Feature",
+      "reasons": [
+        "property #0.pasting_feature"
+      ]
+    },
+    {
+      "id": 91,
+      "name": "Vector And Matrix Utils",
+      "reasons": [
+        "requested utility"
+      ]
+    },
+    {
+      "id": 92,
+      "name": "Frand Help DB",
+      "reasons": [
+        "property #0.help_db"
+      ]
+    },
+    {
+      "id": 93,
+      "name": "Conversion Utils",
+      "reasons": [
+        "property #0.convert_utils"
+      ]
+    },
+    {
+      "id": 94,
+      "name": "Generic Gendered Object",
+      "reasons": [
+        "property #0.gendered_object"
+      ]
+    },
+    {
+      "id": 95,
+      "name": "List Editor",
+      "reasons": [
+        "property #0.list_editor"
+      ]
+    },
+    {
+      "id": 96,
+      "name": "Editor_Owner",
+      "reasons": [
+        "property #39. e"
+      ]
+    },
+    {
+      "id": 97,
+      "name": "HTTP Server",
+      "reasons": [
+        "property #0.http"
+      ]
+    },
+    {
+      "id": 98,
+      "name": "Core",
+      "reasons": [
+        "property owner #2.ansi_options"
+      ]
+    },
+    {
+      "id": 99,
+      "name": "ANSI Utilities",
+      "reasons": [
+        "code reference #20:74"
+      ]
+    },
+    {
+      "id": 100,
+      "name": "ANSI PC",
+      "reasons": [
+        "property #0.ansi_pc"
+      ]
+    },
+    {
+      "id": 101,
+      "name": "ANSI Help",
+      "reasons": [
+        "property #0.help_db"
+      ]
+    },
+    {
+      "id": 102,
+      "name": "ANSI Options",
+      "reasons": [
+        "property #0.options"
+      ]
+    },
+    {
+      "id": 103,
+      "name": "Generic Message Dispatch Object",
+      "reasons": [
+        "property #110.dispatch"
+      ]
+    },
+    {
+      "id": 104,
+      "name": "Generic MCP Package",
+      "reasons": [
+        "property #110.package"
+      ]
+    },
+    {
+      "id": 105,
+      "name": "mcp-negotiate",
+      "reasons": [
+        "property #110.negotiate"
+      ]
+    },
+    {
+      "id": 106,
+      "name": "mcp-cord",
+      "reasons": [
+        "property #110.cord"
+      ]
+    },
+    {
+      "id": 107,
+      "name": "MCP 2.1 Parser",
+      "reasons": [
+        "property #110.parser"
+      ]
+    },
+    {
+      "id": 108,
+      "name": "Generic MCP 2.1 Session",
+      "reasons": [
+        "property #110.session"
+      ]
+    },
+    {
+      "id": 109,
+      "name": "MCP Package Registry",
+      "reasons": [
+        "property #110.registry"
+      ]
+    },
+    {
+      "id": 110,
+      "name": "MCP 2.1",
+      "reasons": [
+        "property #0.mcp"
+      ]
+    },
+    {
+      "id": 111,
+      "name": "Object Prototype",
+      "reasons": [
+        "property #0.obj_proto"
+      ]
+    },
+    {
+      "id": 112,
+      "name": "Generic Waif",
+      "reasons": [
+        "property #0.waif"
+      ]
+    },
+    {
+      "id": 113,
+      "name": "dns-org-mud-moo-simpleedit",
+      "reasons": [
+        "property #110.simpleedit"
+      ]
+    },
+    {
+      "id": 114,
+      "name": "Integer Prototype",
+      "reasons": [
+        "property #0.int_proto"
+      ]
+    },
+    {
+      "id": 115,
+      "name": "List Prototype",
+      "reasons": [
+        "property #0.list_proto"
+      ]
+    },
+    {
+      "id": 116,
+      "name": "MCP Help Database",
+      "reasons": [
+        "property #0.help_db"
+      ]
+    },
+    {
+      "id": 117,
+      "name": "Map Prototype",
+      "reasons": [
+        "property #0.map_proto"
+      ]
+    },
+    {
+      "id": 118,
+      "name": "Generic Anonymous Object",
+      "reasons": [
+        "property #0.anon"
+      ]
+    },
+    {
+      "id": 119,
+      "name": "String Prototype",
+      "reasons": [
+        "property #0.str_proto"
+      ]
+    },
+    {
+      "id": 120,
+      "name": "Generic Base Primitive",
+      "reasons": [
+        "property #0.proto"
+      ]
+    },
+    {
+      "id": 121,
+      "name": "dns-com-vmoo-client",
+      "reasons": [
+        "property #110.client"
+      ]
+    },
+    {
+      "id": 122,
+      "name": "Generic Editor Utilities",
+      "reasons": [
+        "code reference #56:3"
+      ]
+    },
+    {
+      "id": 123,
+      "name": "dns-com-awns-status",
+      "reasons": [
+        "property #110.status"
+      ]
+    },
+    {
+      "id": 124,
+      "name": "Generic Editing State Anon",
+      "reasons": [
+        "property #0.edit_state"
+      ]
+    },
+    {
+      "id": 125,
+      "name": "Menu Utilities",
+      "reasons": [
+        "property #0.menu_utils"
+      ]
+    },
+    {
+      "id": 126,
+      "name": "Generic Editor Session",
+      "reasons": [
+        "property #0.edit_session"
+      ]
+    }
+  ],
+  "snapshotSha256": "a15a2ef3bc6152069710e33aec8bb8de208320f1c9de3d264b30c4183e367ce9",
+  "sourceVerbCount": 1931,
+  "conversionNotes": [
+    "Native Format 17 object flags, property permissions and zero-based preposition IDs are decoded from raw numeric fields; extractor display labels are not used.",
+    "Error values use the native 32-bit enum in the low bits of the stored 64-bit union. ToastCore #59.error_list has unused high bits; its raw representation remains in the pinned source database.",
+    "Extractor 0.1.4 reports 0.1.0 inside its extraction manifest. The installed package version is verified separately.",
+    "Public seed property values are retained without redaction; no learner or external server data is imported.",
+    "Root verbs and properties are limited to resolved dependencies and aliases. Dynamic unresolved references are recorded separately."
+  ]
+}

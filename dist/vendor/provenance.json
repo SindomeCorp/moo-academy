@@ -1,0 +1,7 @@
+{
+  "grammar": "https://github.com/SindomeCorp/tree-sitter-moo",
+  "revision": "5e42672ffa1a4e955fe6a04da534396282522242",
+  "runtime": "web-tree-sitter@0.25.10",
+  "artifact": "Upstream checked-in dist/tree-sitter-moo.wasm",
+  "sha256": "f3fb4427daff3de7fbd9d595fd7b1816a1b6fbb594567200f30a565605fb3af2"
+}

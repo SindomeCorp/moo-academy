@@ -1,0 +1,25 @@
+import type { Profile } from '../parser/index.js';
+import { type MooValue } from './index.js';
+import type { Budget } from '../runtime/budget.js';
+export declare const typeNumbers: {
+    readonly int: 0;
+    readonly object: 1;
+    readonly string: 2;
+    readonly error: 3;
+    readonly list: 4;
+    readonly float: 9;
+    readonly map: 10;
+};
+export declare const fold: (s: string) => string;
+export declare function truth(v: MooValue): boolean;
+export declare function equal(a: MooValue, b: MooValue, budget: Budget, caseSensitive?: boolean): boolean;
+export declare function compare(a: MooValue, b: MooValue, budget: Budget, mapKey?: boolean): number;
+export declare function wrap(value: bigint, profile: Profile): MooValue;
+export declare function unary(op: string, v: MooValue, profile: Profile): MooValue;
+export declare function binary(op: string, a: MooValue, b: MooValue, profile: Profile, budget: Budget): MooValue;
+export declare function length(value: MooValue): number;
+export declare function index(value: MooValue, key: MooValue, budget: Budget): MooValue;
+export declare function slice(value: MooValue, start: MooValue, end: MooValue, budget: Budget): MooValue;
+export declare function mapSet(map: MooValue, key: MooValue, value: MooValue, budget: Budget): MooValue;
+export declare function replaceIndex(value: MooValue, key: MooValue, replacement: MooValue, budget: Budget): MooValue;
+export declare function replaceSlice(value: MooValue, start: MooValue, end: MooValue, replacement: MooValue, budget: Budget): MooValue;

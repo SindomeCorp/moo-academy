@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Learn how to use MOO Academy’s lessons, code editor, sandbox, and saved worlds.">
+  <title>Introduction · MOO Academy</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="index.html">MOO<span>//</span>ACADEMY</a>
+    <nav class="site-links" aria-label="Site navigation">
+      <a href="index.html">Learning workspace</a>
+      <a href="introduction.html" aria-current="page">Introduction</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+  <main class="information-page">
+    <div class="eyebrow">WELCOME TO MOO ACADEMY</div>
+    <h1>Introduction</h1>
+    <p class="page-lead">Learn MOO programming by reading a lesson, running its code, inspecting the results, and trying a change of your own.</p>
+    <p>MOO is a programming language for building shared, text-based worlds. Objects hold properties and verbs: the data and behavior that make a world work. MOO Academy gives you a browser-based learning workspace where you can explore those ideas without setting up a server.</p>
+
+    <section aria-labelledby="getting-started">
+      <h2 id="getting-started">Start with a lesson</h2>
+      <p>Choose <strong>Training</strong> in the header and begin with the <strong>First steps</strong> track. Tracks group related lessons into a recommended order. You can browse or search the lesson list at any time; on smaller screens, open <strong>Browse lessons</strong>.</p>
+      <ol>
+        <li><strong>Read.</strong> Follow the explanation and numbered exercise steps. Check the starting state and the labeled starter result.</li>
+        <li><strong>Run.</strong> Choose <strong>Open code</strong>, edit the example, and press <strong>Run code</strong>. Use <strong>Stop</strong> to cancel an active run.</li>
+        <li><strong>Inspect.</strong> Compare Output, Returned value, Exercise result, and any Errors. Open World to see what changed.</li>
+        <li><strong>Experiment.</strong> Try the suggested edit, predict its effect, and run again. <strong>Restore example</strong> restores the lesson’s code while keeping your world.</li>
+      </ol>
+      <p>Some lessons check an objective; exploration lessons invite you to compare results. Read the exercise feedback before moving on with <strong>Next lesson</strong>.</p>
+      <p>If you follow a track in order, keep using its current world. <strong>Load lesson starting world</strong> is for skipping ahead, recovering from experiments, or starting fresh. It replaces that track’s world after confirmation while keeping your code and progress. You can collapse <strong>Starting State</strong>; that preference carries across lessons.</p>
+    </section>
+
+    <section aria-labelledby="workspace-views">
+      <h2 id="workspace-views">Find your way around</h2>
+      <dl class="view-guide">
+        <dt>Lesson</dt><dd>The explanation, exercise, expected result, and suggested experiment.</dd>
+        <dt>Code</dt><dd>The lesson editor, Run and Stop controls, and execution feedback.</dd>
+        <dt>World</dt><dd>Inspect objects, inheritance, containment, properties, and verbs. Selecting an object to inspect does not change the object on which your code executes; the execution context is shown separately.</dd>
+        <dt>Eval</dt><dd>A console for quick MOO expressions or statements, such as <code>;1 + 2</code>. It shares the current world with Code, so evaluations can change that world. It does not award lesson progress.</dd>
+        <dt>Reference</dt><dd>Builtin documentation and, in the ToastStunt profile, the imported Common Packages utility reference.</dd>
+      </dl>
+      <p>On a wide screen, lessons and the lab sit side by side. On smaller screens, switch views with the tabs. Switching views preserves your code and world.</p>
+      <p>Choose <strong>Sandbox</strong> in the header to experiment without lesson checks. Select a named world, including Common Packages in ToastStunt. Sandbox worlds are saved separately from training tracks.</p>
+    </section>
+
+    <section aria-labelledby="profiles">
+      <h2 id="profiles">Profiles and the educational runtime</h2>
+      <p>The profile dropdown switches between <strong>LambdaMOO</strong> and <strong>ToastStunt</strong>. It changes the language features and available lessons. Open the <strong>?</strong> beside it for the differences.</p>
+      <p>Code runs locally in your browser using an educational MOO runtime. It is not a connection to a live multiplayer MOO. Server integrations use the supported local models and fixtures described in their lessons; permissions, command handling, and scheduling do not reproduce a full server. For example, <code>suspend()</code> is capped at five seconds here.</p>
+      <p>Common Packages contains imported ToastCore utility source. Lessons labeled <strong>Real server exercise</strong> distinguish browser source inspection from code that needs an isolated native server. Read the prerequisites and expected effect before using those examples elsewhere.</p>
+    </section>
+
+    <section aria-labelledby="saving">
+      <h2 id="saving">Keep your work</h2>
+      <p>Worlds, lesson drafts, and progress are stored in this browser. Each track and named sandbox has a separate world for each profile; lesson progress is shared between profiles. Your work does not automatically follow you to another device or browser.</p>
+      <p>Code drafts save as you edit. Eval text saves when you evaluate it. Check the save status, especially if storage is unavailable or another tab owns the workspace.</p>
+      <p>In World, <strong>Export world</strong> downloads the world’s objects and properties. <strong>Download drafts</strong> downloads code drafts and unrun Eval text as JSON; open it to copy source back into an editor. World exports and draft downloads preserve different parts of your work.</p>
+      <p><strong>Import world</strong> replaces the current world after confirmation. <strong>Reset track world</strong> or <strong>Reset sandbox world</strong> restores that workspace’s beginning. These world actions keep your lesson drafts and progress. Export a world before replacing it if you want to keep a copy.</p>
+    </section>
+    <p><a class="page-action" href="index.html">Open the learning workspace →</a></p>
+  </main>
+</body>
+</html>

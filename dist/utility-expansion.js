@@ -1,0 +1,12 @@
+import {wizUtilsLessons,wizExclusions} from './wiz-utils-lessons.js';
+import {commandUtilsLessons,commandExclusions} from './command-utils-lessons.js';
+import {codeUtilsLessons,codeExclusions} from './code-utils-lessons.js';
+import {matchUtilsLessons,matchExclusions} from './match-utils-lessons.js';
+import {objectUtilsLessons,objectExclusions} from './object-utils-lessons.js';
+import {timeUtilsLessons,timeExclusions} from './time-utils-lessons.js';
+import {mathUtilsLessons,mathExclusions} from './math-utils-lessons.js';
+import {matrixUtilsLessons,matrixExclusions} from './matrix-utils-lessons.js';
+import {listUtilsLessons,listExclusions} from './list-utils-lessons.js';
+import {setUtilsLessons,setExclusions} from './set-utils-lessons.js';
+export const expandedUtilities={wiz:wizUtilsLessons,command:commandUtilsLessons,code:codeUtilsLessons,match:matchUtilsLessons,object:objectUtilsLessons,time:timeUtilsLessons,math:mathUtilsLessons,matrix:matrixUtilsLessons,list:listUtilsLessons,set:setUtilsLessons};
+export const utilityExclusions={wiz:wizExclusions,command:commandExclusions,code:codeExclusions,match:matchExclusions,object:objectExclusions,time:timeExclusions,math:mathExclusions,matrix:matrixExclusions,list:listExclusions,set:setExclusions};
