@@ -8,7 +8,7 @@ This product includes software developed or owned by Caldera International, Inc.
 
 | Material | License, notices, and provenance |
 | --- | --- |
-| Bundled moo-in-javascript runtime and its dependencies | [Runtime LICENSE](dist/runtime/LICENSE), [third-party notices](dist/runtime/docs/third-party-notices.md), and [package provenance](dist/runtime/provenance.json). Copies also accompany immutable runtime releases. |
+| Bundled @sindomecorp/moo-in-javascript npm runtime and its dependencies | [Runtime LICENSE](dist/runtime/LICENSE), [third-party notices](dist/runtime/docs/third-party-notices.md), and [package provenance](dist/runtime/provenance.json). Copies also accompany immutable runtime releases. |
 | Tree-sitter MOO parser | [Parser license](dist/vendor/tree-sitter-moo.LICENSE) and [pinned revision/hash](dist/vendor/provenance.json). |
 | web-tree-sitter | [Runtime loader license](dist/vendor/web-tree-sitter.LICENSE). |
 | Imported ToastCore world and utility verb source | [Import manifest](dist/packages/common-packages/manifest.json), original source and embedded attributions in [verbs.json](dist/packages/common-packages/verbs.json), and [import documentation](docs/common-packages.md). |

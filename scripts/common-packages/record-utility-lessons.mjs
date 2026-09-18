@@ -1,5 +1,5 @@
 import {readFile} from 'node:fs/promises';
-import * as api from 'moo-in-javascript';
+import * as api from '@sindomecorp/moo-in-javascript';
 import {nativeScenario} from './native-scenario.mjs';
 import {utilityResults} from '../../dist/utility-results.js';
 import {installCommonPackages,commonWorld,commonManifest} from '../../dist/common-packages.js';

@@ -1,10 +1,10 @@
-import * as api from 'moo-in-javascript';
-import * as fixtures from 'moo-in-javascript/fixtures';
+import * as api from '@sindomecorp/moo-in-javascript';
+import * as fixtures from '@sindomecorp/moo-in-javascript/fixtures';
 import {prepareCheckpoint} from '../dist/checkpoints.js';
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { createRuntime, listBuiltins, moo } from 'moo-in-javascript';
-import { createTeachingWorld } from 'moo-in-javascript/fixtures';
+import { createRuntime, listBuiltins, moo } from '@sindomecorp/moo-in-javascript';
+import { createTeachingWorld } from '@sindomecorp/moo-in-javascript/fixtures';
 import { builtinLessons } from '../dist/builtin-lessons.js';
 import { displayValue } from '../dist/display.js';
 for (const profile of ['toaststunt', 'lambdamoo']) {

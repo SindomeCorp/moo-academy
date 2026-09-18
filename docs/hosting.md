@@ -1,5 +1,9 @@
 # Hosting MOO Academy
 
+The production origin is **https://moo.mudverse.com**. Follow the
+[SEO launch checklist](seo.md) for canonical redirects, public indexing checks,
+and Search Console setup.
+
 MOO Academy is a static site. Publish the contents of `dist/` to a web server or
 static hosting service; no application backend, database service, API keys, or
 build-time environment variables are required. Node, npm, and Python are local
@@ -15,7 +19,7 @@ The app uses relative asset URLs. It can be served at the site root or under a
 directory such as `/academy/`; redirect `/academy` to `/academy/` to retain the
 correct base path. Apply the header rules below relative to that deployment
 prefix. No SPA fallback is needed: `index.html`, `introduction.html`,
-`contact.html`, and `field-notes.html` are actual files. Missing assets should
+`about.html`, `resources.html`, `contact.html`, and `field-notes.html` are actual files. Missing assets should
 return 404 rather than an HTML page with status 200.
 
 Serve over HTTPS for a public deployment. Keep assets on the same origin as the
@@ -85,7 +89,7 @@ keys just because the repository has been renamed.
 - Open the workspace in a fresh browser context. Confirm the loading notice
   clears, the editor enables, a starter runs, and output appears without console
   errors or failed worker/WASM requests.
-- Open Introduction, Contact, and the real-server field notes. Refresh each page
+- Open Introduction, About, Resources, Contact, and the real-server field notes. Refresh each page
   directly to check paths and navigation.
 - Edit a draft, run code, refresh, and confirm the saved state remains. Check
   World inspection, profile switching, and the Common Packages sandbox/reference.

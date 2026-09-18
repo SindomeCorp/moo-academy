@@ -57,7 +57,7 @@ test('lesson search filters topics, clears on path changes and exposes real-serv
  await ready(page);await path(page,'builtins');await page.locator('#lessonSearch').fill('sqlite');await expect(page.locator('#lessonNav button')).toHaveCount(9);
  await page.locator('#lessonSearch').fill('no-such-lesson');await expect(page.locator('#lessonNav')).toContainText('No lessons match');
  await path(page,'objects');await expect(page.locator('#lessonSearch')).toHaveValue('');await expect(page.locator('#lessonNav button')).toHaveCount(9);
- const popup=context.waitForEvent('page');await page.getByRole('link',{name:'Beyond the playground'}).click();const notes=await popup;await expect(notes.locator('h1')).toHaveText('Beyond the playground');await expect(notes.locator('#tasks')).toContainText('revalidate');
+ const popup=context.waitForEvent('page');await page.getByRole('link',{name:'Beyond the playground'}).click();const notes=await popup;await expect(notes.locator('h1')).toHaveText('MOO programming beyond the playground');await expect(notes.locator('#tasks')).toContainText('revalidate');
 });
 
 test('course pages and warnings fit desktop and narrow screens',async({page})=>{

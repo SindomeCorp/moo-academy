@@ -24,7 +24,7 @@ properties (data) and verbs (behavior).
   with labeled browser examples and real-server walkthroughs.
 
 Code executes locally in a worker using the bundled
-[moo-in-javascript](https://github.com/SindomeCorp/moo-in-javascript) runtime.
+[@sindomecorp/moo-in-javascript](https://www.npmjs.com/package/@sindomecorp/moo-in-javascript) runtime.
 No MOO server, database service, account, or API key is required. This is an
 educational environment: it does not reproduce a complete multiplayer server.
 Networking and host integrations use documented local simulations or fixtures;
@@ -83,8 +83,11 @@ npm run build
 | `npm run build` | Run both dependency builds above. |
 | `npm run build:common-packages` | Re-import pinned ToastCore data; an advanced maintenance operation. |
 
-The runtime dependency is a pinned tarball under `vendor/packages/`, installed by
-`npm ci`; keep it in source control. Builds retain licenses and provenance.
+The runtime dependency is pinned to `@sindomecorp/moo-in-javascript@0.2.5` from
+the npm registry. `npm ci` verifies the lockfile integrity; no local tarball is
+needed. Builds copy the installed package, retain licenses, and record registry
+provenance and a deterministic shipped-file manifest. Rebuilding after installation
+requires no additional runtime download.
 Common Packages snapshots are already included. Their regeneration and optional
 native-server comparisons are documented in [Common Packages](docs/common-packages.md).
 
@@ -105,6 +108,7 @@ and enforces coverage gates. CI/CD is not configured; validation is run locally.
 | Command | Checks |
 | --- | --- |
 | `npm test` | Node tests for examples, grammar, checkpoints, grading, storage coordination, and utilities. |
+| `npm run test:seo` | Public-page metadata, canonical URLs, sharing assets, and indexing files. |
 | `npm run test:assets` | Bundled files, hashes, dependency pins, and licenses. |
 | `npm run test:browser` | Full Chromium suite plus selected Firefox and WebKit scenarios. |
 | `npm run test:coverage` | Node and Chromium tests with coverage gates. |
@@ -114,6 +118,10 @@ See [Testing](docs/testing.md) for focused runs, browser overrides, troubleshoot
 coverage details, and reproducing the README screenshot.
 
 ## Host the app
+
+The production address is **https://moo.mudverse.com/**. Page canonicals and the
+sitemap use that origin. See the [SEO launch guide](docs/seo.md) for indexing and
+Search Console setup after deployment.
 
 Publish the **contents of `dist/`**, preserving their relative paths, to a static
 HTTP(S) host. No Node or Python process is needed in production. Use correct
@@ -149,7 +157,6 @@ and [Technical overview](docs/architecture.md) for persistence and recovery deta
 | `scripts/` | Dependency builds, local server, validation, imports, and screenshot capture. |
 | `tests/` | Node tests and Playwright browser scenarios. |
 | `docs/` | Hosting, testing, architecture, and curriculum maintenance guides. |
-| `vendor/packages/` | The pinned runtime package used by the lockfile. |
 
 To contribute, read [CONTRIBUTING.md](CONTRIBUTING.md) and, for curriculum changes,
 [Lesson authoring](docs/lesson-authoring.md). Report bugs or propose lessons through

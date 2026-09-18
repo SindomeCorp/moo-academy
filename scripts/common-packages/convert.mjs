@@ -1,6 +1,6 @@
 import {readFile,writeFile,mkdir} from 'node:fs/promises';
 import {createHash} from 'node:crypto';
-import {createRuntime} from 'moo-in-javascript';
+import {createRuntime} from '@sindomecorp/moo-in-javascript';
 const jsonl=async path=>(await readFile(path,'utf8')).trim().split('\n').filter(Boolean).map(JSON.parse);
 const id=value=>String(value).replace(/^#/,'');
 const hash=text=>createHash('sha256').update(text).digest('hex');

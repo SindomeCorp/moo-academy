@@ -19,11 +19,12 @@
     "test:assets": "node scripts/verify-assets.mjs",
     "test:coverage": "node scripts/test-coverage.mjs",
     "test:check": "npm run test:assets && node scripts/test-coverage.mjs --all-browsers",
-    "build:common-packages": "node scripts/common-packages/build.mjs"
+    "build:common-packages": "node scripts/common-packages/build.mjs",
+    "test:seo": "node --test tests/seo.test.mjs"
   },
   "dependencies": {
-    "moo-in-javascript": "file:vendor/packages/moo-in-javascript-0.2.3.tgz",
-    "web-tree-sitter": "0.25.10"
+    "web-tree-sitter": "0.25.10",
+    "@sindomecorp/moo-in-javascript": "0.2.5"
   },
   "devDependencies": {
     "@playwright/test": "1.63.0",

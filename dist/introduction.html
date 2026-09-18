@@ -3,27 +3,46 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Learn how to use MOO Academy’s lessons, code editor, sandbox, and saved worlds.">
-  <title>Introduction · MOO Academy</title>
+  <title>Learn MOO Programming: Getting Started | MOO Academy</title>
   <link rel="stylesheet" href="styles.css">
+
+  <meta name="description" content="Start learning MOO programming with hands-on lessons. Choose LambdaMOO or ToastStunt, run code in your browser, inspect objects, and keep your practice worlds.">
+  <link rel="canonical" href="https://moo.mudverse.com/introduction.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="MOO Academy">
+  <meta property="og:title" content="Learn MOO Programming: Getting Started | MOO Academy">
+  <meta property="og:description" content="Start learning MOO programming with hands-on lessons. Choose LambdaMOO or ToastStunt, run code in your browser, inspect objects, and keep your practice worlds.">
+  <meta property="og:url" content="https://moo.mudverse.com/introduction.html">
+  <meta property="og:image" content="https://moo.mudverse.com/social/overview.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1440">
+  <meta property="og:image:height" content="1100">
+  <meta property="og:image:alt" content="MOO Academy showing a MOO lesson, editable code, and a successfully completed exercise.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Learn MOO Programming: Getting Started | MOO Academy">
+  <meta name="twitter:description" content="Start learning MOO programming with hands-on lessons. Choose LambdaMOO or ToastStunt, run code in your browser, inspect objects, and keep your practice worlds.">
+  <meta name="twitter:image" content="https://moo.mudverse.com/social/overview.png">
+  <meta name="twitter:image:alt" content="MOO Academy showing a MOO lesson, editable code, and a successfully completed exercise.">
 </head>
 <body>
   <header class="topbar">
-    <a class="brand" href="index.html">MOO<span>//</span>ACADEMY</a>
+    <a class="brand" href="./">MOO<span>//</span>ACADEMY</a>
     <nav class="site-links" aria-label="Site navigation">
-      <a href="index.html">Learning workspace</a>
+      <a href="./">Learning workspace</a>
       <a href="introduction.html" aria-current="page">Introduction</a>
+      <a href="about.html">About</a>
+      <a href="resources.html">Resources</a>
       <a href="contact.html">Contact</a>
     </nav>
   </header>
   <main class="information-page">
     <div class="eyebrow">WELCOME TO MOO ACADEMY</div>
-    <h1>Introduction</h1>
+    <h1>Learn MOO programming: getting started</h1>
     <p class="page-lead">Learn MOO programming by reading a lesson, running its code, inspecting the results, and trying a change of your own.</p>
-    <p>MOO is a programming language for building shared, text-based worlds. Objects hold properties and verbs: the data and behavior that make a world work. MOO Academy gives you a browser-based learning workspace where you can explore those ideas without setting up a server.</p>
+    <p>MOO is a programming language for building shared, text-based worlds. Objects hold properties and verbs: the data and behavior that make a world work. MOO Academy gives you a browser-based learning workspace where you can explore those ideas without setting up a server. No account or prior programming experience is needed: start with values and variables, then explore objects, properties, verbs, and inheritance.</p>
 
     <section aria-labelledby="getting-started">
-      <h2 id="getting-started">Start with a lesson</h2>
+      <h2 id="getting-started">Start learning MOO coding with a lesson</h2>
       <p>Choose <strong>Training</strong> in the header and begin with the <strong>First steps</strong> track. Tracks group related lessons into a recommended order. You can browse or search the lesson list at any time; on smaller screens, open <strong>Browse lessons</strong>.</p>
       <ol>
         <li><strong>Read.</strong> Follow the explanation and numbered exercise steps. Check the starting state and the labeled starter result.</li>
@@ -49,7 +68,8 @@
     </section>
 
     <section aria-labelledby="profiles">
-      <h2 id="profiles">Profiles and the educational runtime</h2>
+      <h2 id="profiles">Learn LambdaMOO or ToastStunt</h2>
+      <p>To learn LambdaMOO, choose the LambdaMOO profile and practice the language’s core concepts. To learn ToastStunt, use the default ToastStunt profile, which also introduces extensions such as maps and the imported Common Packages utilities. Both profiles share the same lesson workflow.</p>
       <p>The profile dropdown switches between <strong>LambdaMOO</strong> and <strong>ToastStunt</strong>. It changes the language features and available lessons. Open the <strong>?</strong> beside it for the differences.</p>
       <p>Code runs locally in your browser using an educational MOO runtime. It is not a connection to a live multiplayer MOO. Server integrations use the supported local models and fixtures described in their lessons; permissions, command handling, and scheduling do not reproduce a full server. For example, <code>suspend()</code> is capped at five seconds here.</p>
       <p>Common Packages contains imported ToastCore utility source. Lessons labeled <strong>Real server exercise</strong> distinguish browser source inspection from code that needs an isolated native server. Read the prerequisites and expected effect before using those examples elsewhere.</p>
@@ -62,7 +82,8 @@
       <p>In World, <strong>Export world</strong> downloads the world’s objects and properties. <strong>Download drafts</strong> downloads code drafts and unrun Eval text as JSON; open it to copy source back into an editor. World exports and draft downloads preserve different parts of your work.</p>
       <p><strong>Import world</strong> replaces the current world after confirmation. <strong>Reset track world</strong> or <strong>Reset sandbox world</strong> restores that workspace’s beginning. These world actions keep your lesson drafts and progress. Export a world before replacing it if you want to keep a copy.</p>
     </section>
-    <p><a class="page-action" href="index.html">Open the learning workspace →</a></p>
+    <p>Continue with <a href="resources.html">LambdaMOO and ToastStunt programming manuals and tutorials</a>, or read <a href="field-notes.html">MOO programming field notes for real servers</a> when you are ready to move beyond the browser.</p>
+    <p><a class="page-action" href="./">Open the learning workspace →</a></p>
   </main>
 </body>
 </html>

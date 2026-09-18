@@ -9,7 +9,7 @@ export function lessonHash(lesson) {
 export async function fixtureProvenance() {
  const fixture=await readFile(new URL('./native-scenario.mjs',import.meta.url));
  const runtime=JSON.parse(await readFile(new URL('../../dist/runtime/provenance.json',import.meta.url),'utf8'));
- return {databaseSha256:commonManifest.source.sha256,fixtureSha256:hash(fixture),runtimeSha256:runtime.tarballSha256};
+ return {databaseSha256:commonManifest.source.sha256,fixtureSha256:hash(fixture),runtimeSha256:runtime.artifactSha256};
 }
 export function assertCurrent(lesson,record,environment) {
  if(!record?.provenance || record.provenance.lessonSha256!==lessonHash(lesson) || Object.entries(environment).some(([key,value])=>record.provenance[key]!==value))throw Error('Stale or missing native observations for '+lesson.id+'; deliberately re-record and review the results.');

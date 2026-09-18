@@ -1,6 +1,6 @@
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
-import {moo} from 'moo-in-javascript';
+import {moo} from '@sindomecorp/moo-in-javascript';
 import {displayValue} from '../dist/display.js';
 import {builtinSignature} from '../dist/builtin-reference.js';
 for(const [name,value,expected] of [

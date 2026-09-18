@@ -17,6 +17,7 @@ npm run test:check
 | Command | Purpose |
 | --- | --- |
 | `npm test` | All Node tests. |
+| `npm run test:seo` | Canonicals, metadata, sharing assets, sitemap, and robots policy for all six public pages. |
 | `npm run test:assets` | Runtime/parser inventories, hashes, pins, licenses, and Common Packages hashes. |
 | `npm run test:browser` | Full Chromium suite and the configured Firefox/WebKit subset. |
 | `npm run test:coverage` | Node plus Chromium coverage and per-module gates. |
@@ -103,3 +104,8 @@ maintenance tasks. They can download source/database dependencies, start isolate
 native processes, and update committed observations. They are not part of the
 ordinary test setup; follow [Common Packages](common-packages.md) when changing
 that material.
+
+SEO checks also run within `npm test`. Browser SEO scenarios check informational
+content without JavaScript, mobile layout, and stable workspace canonicals.
+Runtime-package tests reject changed files, provenance, release pointers, and
+local dependency replacements, and check deterministic immutable releases.

@@ -3,12 +3,16 @@
 MOO Academy is authored HTML, CSS, and browser ES modules under `dist/`. A Python
 development server serves those files; production needs only static hosting.
 There is no app bundling step. Build scripts copy pinned parser/runtime artifacts
-and preserve their licenses and provenance.
+and preserve their licenses and provenance. Runtime provenance records the exact
+registry version, resolved archive URL, lockfile integrity, and sorted hashes of
+every shipped runtime file (including docs and licenses). Its SHA-256 artifact
+digest names immutable releases and binds native comparison observations to the
+shipped package contents.
 
 ## Execution and curriculum
 
 The editor uses the shipped Tree-sitter MOO WASM parser for syntax diagnostics.
-MOO execution happens in a dedicated worker using the pinned moo-in-javascript
+MOO execution happens in a dedicated worker using the pinned `@sindomecorp/moo-in-javascript` npm
 runtime. The main page coordinates the active profile, lesson, saved world, and
 result display. Exercise probes use separate prepared worlds so grading does not
 mutate the learner's workspace.

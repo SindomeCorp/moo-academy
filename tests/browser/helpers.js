@@ -7,11 +7,12 @@ import {randomUUID} from 'node:crypto';
 // Keep real browser services; inject failures only at the boundary being tested.
 export const test = base.extend({
   expectedPageErrors: [[], {option:true}],
-  observePages: [async ({context, page, expectedPageErrors}, use, testInfo) => {
+  observePages: [async ({context, page, expectedPageErrors, javaScriptEnabled}, use, testInfo) => {
     const errors=[], collectors=new Map();
     async function observe(p) {
       p.on('pageerror', error => errors.push(error.message));
-      if (!process.env.MOO_COVERAGE || testInfo.project.name !== 'chromium') return;
+      // Disabled-script contexts verify static HTML and cannot enable the debugger.
+      if (!process.env.MOO_COVERAGE || testInfo.project.name !== 'chromium' || !javaScriptEnabled) return;
       const started=p.coverage.startJSCoverage({resetOnNavigation:false});
       let collected=false;
       const collect=async()=> {

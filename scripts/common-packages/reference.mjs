@@ -1,5 +1,5 @@
 import {readFile,writeFile} from 'node:fs/promises';
-import {createRuntime} from 'moo-in-javascript';
+import {createRuntime} from '@sindomecorp/moo-in-javascript';
 import {utilityCourses} from '../../dist/utility-lessons.js';
 import {stringCoverage} from '../../dist/string-utils-coverage.js';
 import {utilityExclusions} from '../../dist/utility-expansion.js';

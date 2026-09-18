@@ -1,7 +1,7 @@
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
 import {readFile} from 'node:fs/promises';
-import * as api from 'moo-in-javascript';
+import * as api from '@sindomecorp/moo-in-javascript';
 import {expandedUtilities} from '../dist/utility-expansion.js';
 import {utilityResults} from '../dist/utility-results.js';
 import {utilityCourses} from '../dist/utility-lessons.js';

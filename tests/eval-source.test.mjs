@@ -1,7 +1,7 @@
 import {test,after} from 'node:test';
 import assert from 'node:assert/strict';
 import {Parser,Language} from 'web-tree-sitter';
-import {createRuntime} from 'moo-in-javascript';
+import {createRuntime} from '@sindomecorp/moo-in-javascript';
 import {prepareEvalSource} from '../dist/eval-source.js';
 import {displayValue} from '../dist/display.js';
 await Parser.init();

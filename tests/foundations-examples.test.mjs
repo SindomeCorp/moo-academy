@@ -1,7 +1,7 @@
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
-import {createRuntime, moo} from 'moo-in-javascript';
-import {createTeachingWorld} from 'moo-in-javascript/fixtures';
+import {createRuntime, moo} from '@sindomecorp/moo-in-javascript';
+import {createTeachingWorld} from '@sindomecorp/moo-in-javascript/fixtures';
 import {foundationLessonsForProfile} from '../dist/lessons.js';
 import {displayValue} from '../dist/display.js';
 for (const profile of ['toaststunt','lambdamoo']) {

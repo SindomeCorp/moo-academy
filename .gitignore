@@ -1,8 +1,5 @@
 node_modules/
 /vendor/*
-!/vendor/packages/
-/vendor/packages/*
-!/vendor/packages/moo-in-javascript-0.2.3.tgz
 test-results*/
 playwright-report/
 coverage/

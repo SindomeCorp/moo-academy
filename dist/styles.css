@@ -285,3 +285,6 @@ button, select, summary {touch-action:manipulation;}
  .view-guide {grid-template-columns:1fr;gap:8px;}
  .view-guide dd {margin-bottom:12px;}
 }
+.resource-list {padding-left:22px;}
+.resource-list li {padding:6px 0;}
+.resource-list a {text-underline-offset:3px;}

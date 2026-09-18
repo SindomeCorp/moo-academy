@@ -19,7 +19,8 @@ when reporting a problem. Share a minimal example instead of personal saved work
 
 There is no CI/CD workflow. Run checks locally and report their results. Test
 artifacts, dependency checkouts, local databases, and caches stay out of commits.
-Keep bundled assets, provenance, notices, and the pinned runtime tarball tracked.
+Keep bundled assets, provenance, notices, and the npm lockfile tracked. The runtime
+comes from the exact scoped registry dependency; do not substitute a local tarball.
 
 ## Lessons and compatibility
 
@@ -41,7 +42,9 @@ but required when re-recording the observations those lessons depend on.
 ## Dependencies and public docs
 
 Dependency updates are deliberate: change the pin and lockfile, rebuild bundled
-assets, review generated changes and notices, then run validation. Retain older
+assets, review generated changes and notices, then run validation. Runtime changes
+also require re-recording and verifying the Common Packages native observations
+against the new artifact digest; never just change hashes in old evidence. Retain older
 content-addressed runtime releases so already-open tabs can still fetch their
 matching assets. See [Hosting](docs/hosting.md#updates-and-rollback).
 

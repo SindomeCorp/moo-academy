@@ -3,7 +3,7 @@ import {test} from 'node:test';
 import assert from 'node:assert/strict';
 import {readFile} from 'node:fs/promises';
 import {createHash} from 'node:crypto';
-import * as api from 'moo-in-javascript';
+import * as api from '@sindomecorp/moo-in-javascript';
 import {installCommonPackages,commonManifest,commonLoadOptions} from '../dist/common-packages.js';
 import {utilityCourses} from '../dist/utility-lessons.js';
 import {coursesForProfile} from '../dist/curriculum.js';

@@ -1,7 +1,7 @@
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
-import * as api from 'moo-in-javascript';
-import * as fixtures from 'moo-in-javascript/fixtures';
+import * as api from '@sindomecorp/moo-in-javascript';
+import * as fixtures from '@sindomecorp/moo-in-javascript/fixtures';
 import {findLesson} from '../dist/curriculum.js';
 import {prepareCheckpoint,lessonContext} from '../dist/checkpoints.js';
 import {displayValue} from '../dist/display.js';

@@ -7613,8 +7613,8 @@
         "expected": "0",
         "expectedOutput": [
           "RANDOM zero through two: 0",
-          "RANDOM minus two through zero: -1",
-          "RANDOM around ten: 8"
+          "RANDOM minus two through zero: -2",
+          "RANDOM around ten: 11"
         ],
         "executionMode": "browser",
         "outputChoices": {
@@ -7683,8 +7683,8 @@
         "expected": "0",
         "expectedOutput": [
           "RANDOM zero through two: 0",
-          "RANDOM minus two through zero: -1",
-          "RANDOM around ten: 8"
+          "RANDOM minus two through zero: -2",
+          "RANDOM around ten: 11"
         ],
         "executionMode": "browser",
         "outputChoices": {
@@ -9727,8 +9727,8 @@
           "FROM DAY next Monday: 1704096000",
           "FROM MONTH next January: 1798790400",
           "DST MIDNIGHT: 1704067200",
-          "UNTIL DATE: 9165665",
-          "UNTIL TIME noon: -17935"
+          "UNTIL DATE: 9156907",
+          "UNTIL TIME noon: -26693"
         ],
         "executionMode": "browser",
         "outputChoices": {
@@ -9803,8 +9803,8 @@
           "FROM DAY next Monday: 1704096000",
           "FROM MONTH next January: 1798790400",
           "DST MIDNIGHT: 1704067200",
-          "UNTIL DATE: 9165665",
-          "UNTIL TIME noon: -17935"
+          "UNTIL DATE: 9156907",
+          "UNTIL TIME noon: -26693"
         ],
         "executionMode": "browser",
         "outputChoices": {
@@ -9872,8 +9872,8 @@
           "FROM DAY next Monday: 1704096000",
           "FROM MONTH next January: 1798790400",
           "DST MIDNIGHT: 1704067200",
-          "UNTIL DATE: 9165665",
-          "UNTIL TIME noon: -17935"
+          "UNTIL DATE: 9156907",
+          "UNTIL TIME noon: -26693"
         ],
         "executionMode": "browser",
         "outputChoices": {
@@ -10132,8 +10132,8 @@
           "FROM DAY next Monday: 1704096000",
           "FROM MONTH next January: 1798790400",
           "DST MIDNIGHT: 1704067200",
-          "UNTIL DATE: 9165665",
-          "UNTIL TIME noon: -17935"
+          "UNTIL DATE: 9156907",
+          "UNTIL TIME noon: -26693"
         ],
         "executionMode": "browser",
         "outputChoices": {
@@ -10204,8 +10204,8 @@
           "FROM DAY next Monday: 1704096000",
           "FROM MONTH next January: 1798790400",
           "DST MIDNIGHT: 1704067200",
-          "UNTIL DATE: 9165665",
-          "UNTIL TIME noon: -17935"
+          "UNTIL DATE: 9156907",
+          "UNTIL TIME noon: -26693"
         ],
         "executionMode": "browser",
         "outputChoices": {
@@ -13925,10 +13925,10 @@
         "code": "items = {1, 2, 3};\nplayer:tell(\"RANDOM_ITEM choice: \", $list_utils:random_item(items));\nplayer:tell(\"RANDOM_ELEMENT alias: \", $list_utils:random_element(items));\nplayer:tell(\"RANDOMLY_PERMUTE: \", toliteral($list_utils:randomly_permute(items)));\nplayer:tell(\"RANDOMLY_PERMUTE_SUSPENDED: \", toliteral($list_utils:randomly_permute_suspended(items)));",
         "expected": "0",
         "expectedOutput": [
-          "RANDOM_ITEM choice: 1",
-          "RANDOM_ELEMENT alias: 3",
+          "RANDOM_ITEM choice: 3",
+          "RANDOM_ELEMENT alias: 1",
           "RANDOMLY_PERMUTE: {1, 3, 2}",
-          "RANDOMLY_PERMUTE_SUSPENDED: {1, 2, 3}"
+          "RANDOMLY_PERMUTE_SUSPENDED: {3, 1, 2}"
         ],
         "executionMode": "browser",
         "outputChoices": {
@@ -14281,10 +14281,10 @@
         "code": "items = {1, 2, 3};\nplayer:tell(\"RANDOM_ITEM choice: \", $list_utils:random_item(items));\nplayer:tell(\"RANDOM_ELEMENT alias: \", $list_utils:random_element(items));\nplayer:tell(\"RANDOMLY_PERMUTE: \", toliteral($list_utils:randomly_permute(items)));\nplayer:tell(\"RANDOMLY_PERMUTE_SUSPENDED: \", toliteral($list_utils:randomly_permute_suspended(items)));",
         "expected": "0",
         "expectedOutput": [
-          "RANDOM_ITEM choice: 1",
-          "RANDOM_ELEMENT alias: 3",
+          "RANDOM_ITEM choice: 3",
+          "RANDOM_ELEMENT alias: 1",
           "RANDOMLY_PERMUTE: {1, 3, 2}",
-          "RANDOMLY_PERMUTE_SUSPENDED: {1, 2, 3}"
+          "RANDOMLY_PERMUTE_SUSPENDED: {3, 1, 2}"
         ],
         "executionMode": "browser",
         "outputChoices": {
@@ -14412,10 +14412,10 @@
         "code": "items = {1, 2, 3};\nplayer:tell(\"RANDOM_ITEM choice: \", $list_utils:random_item(items));\nplayer:tell(\"RANDOM_ELEMENT alias: \", $list_utils:random_element(items));\nplayer:tell(\"RANDOMLY_PERMUTE: \", toliteral($list_utils:randomly_permute(items)));\nplayer:tell(\"RANDOMLY_PERMUTE_SUSPENDED: \", toliteral($list_utils:randomly_permute_suspended(items)));",
         "expected": "0",
         "expectedOutput": [
-          "RANDOM_ITEM choice: 1",
-          "RANDOM_ELEMENT alias: 3",
+          "RANDOM_ITEM choice: 3",
+          "RANDOM_ELEMENT alias: 1",
           "RANDOMLY_PERMUTE: {1, 3, 2}",
-          "RANDOMLY_PERMUTE_SUSPENDED: {1, 2, 3}"
+          "RANDOMLY_PERMUTE_SUSPENDED: {3, 1, 2}"
         ],
         "executionMode": "browser",
         "outputChoices": {

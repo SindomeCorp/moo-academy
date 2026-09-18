@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About MOO Academy: Browser-Based MOO Learning</title>
+  <link rel="stylesheet" href="styles.css">
+
+  <meta name="description" content="See how MOO Academy teaches LambdaMOO and ToastStunt in your browser, including its open-source runtime, local saved worlds, and educational limitations.">
+  <link rel="canonical" href="https://moo.mudverse.com/about.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="MOO Academy">
+  <meta property="og:title" content="About MOO Academy: Browser-Based MOO Learning">
+  <meta property="og:description" content="See how MOO Academy teaches LambdaMOO and ToastStunt in your browser, including its open-source runtime, local saved worlds, and educational limitations.">
+  <meta property="og:url" content="https://moo.mudverse.com/about.html">
+  <meta property="og:image" content="https://moo.mudverse.com/social/overview.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1440">
+  <meta property="og:image:height" content="1100">
+  <meta property="og:image:alt" content="MOO Academy showing a MOO lesson, editable code, and a successfully completed exercise.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="About MOO Academy: Browser-Based MOO Learning">
+  <meta name="twitter:description" content="See how MOO Academy teaches LambdaMOO and ToastStunt in your browser, including its open-source runtime, local saved worlds, and educational limitations.">
+  <meta name="twitter:image" content="https://moo.mudverse.com/social/overview.png">
+  <meta name="twitter:image:alt" content="MOO Academy showing a MOO lesson, editable code, and a successfully completed exercise.">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="./">MOO<span>//</span>ACADEMY</a>
+    <nav class="site-links" aria-label="Site navigation">
+      <a href="./">Learning workspace</a>
+      <a href="introduction.html">Introduction</a>
+      <a href="about.html" aria-current="page">About</a>
+      <a href="resources.html">Resources</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+  <main class="information-page">
+    <div class="eyebrow">BEHIND THE WORKSPACE</div>
+    <h1>About MOO Academy</h1>
+    <p class="page-lead">A web-only place to learn MOO, built from open-source tools and real MOO examples.</p>
+    <p>MOO Academy combines guided lessons, an editor, an object inspector, and a sandbox. The interface is built with HTML, CSS, and JavaScript modules. You use it entirely in a web browser, without installing a MOO server or creating an account. See <a href="introduction.html">Introduction</a> for a tour of the learning workflow.</p>
+
+    <section aria-labelledby="browser-runtime">
+      <h2 id="browser-runtime">What happens when you run code?</h2>
+      <p>The web host serves the site’s pages, JavaScript, WebAssembly assets, and prepared worlds. Parsing and MOO execution happen on your device. Your exercise code runs locally; it is not submitted to a remote MOO server for execution.</p>
+      <ol>
+        <li><strong>Parse.</strong> The editor uses a Tree-sitter MOO grammar, loaded through WebAssembly, to identify syntax problems.</li>
+        <li><strong>Execute.</strong> The educational JavaScript runtime checks the selected profile and evaluates supported code in a browser Web Worker, keeping the interface responsive.</li>
+        <li><strong>Inspect and save.</strong> The runtime returns output, diagnostics, a return value, and a world result. Accepted world changes become the current world and are saved locally.</li>
+      </ol>
+      <p>Code and Eval share the current world. The active workspace reuses a worker to reduce repeated startup costs. <strong>Stop</strong> terminates the active run and discards its uncommitted changes. A normal MOO error or a tick limit can retain changes made before the failure, so always read the feedback.</p>
+    </section>
+
+    <section aria-labelledby="parser-limits">
+      <h2 id="parser-limits">Parser and runtime limitations</h2>
+      <p><strong>A syntax check is not a promise of execution support.</strong> Tree-sitter recognizes the shape of code; the runtime separately decides whether its features are implemented and allowed in the selected LambdaMOO or ToastStunt profile. For example, maps belong to the ToastStunt profile, and <code>fork</code> is unsupported by this runtime.</p>
+      <p>The bundled grammar also has differences from native MOO parsing. It reads verb bodies, not whole native database dumps or interactive <code>.program</code> sessions. Some valid native spellings are not accepted: use <code>325.0</code> and <code>0.0325</code> instead of the shorthand <code>325.</code> and <code>.0325</code>. These are limitations of the bundled parser, not new MOO language rules.</p>
+      <p>The runtime implements an educational subset. Full permission enforcement, command dispatch, a native task scheduler, WAIFs, anonymous objects, multiple inheritance, and native multithreading are outside the current implementation. Regex support also differs from native server engines. <code>suspend()</code> waits at most five seconds here; that cap is specific to this learning environment.</p>
+      <p>File and connection exercises use virtual state. Network requests and process-related builtins use configured fixtures rather than contacting arbitrary services or launching programs. SQLite exercises run a local SQLite engine compiled for the browser. Builtin notes in <strong>Reference</strong> explain which behavior is implemented, limited, or simulated.</p>
+      <p>Common Packages preserves imported ToastCore utility source. Retaining a verb’s source does not make every dependency executable in the browser. Lessons that need native services label their real-server exercises separately. The runtime’s <a href="https://github.com/SindomeCorp/moo-in-javascript/blob/main/docs/compatibility.md">compatibility notes</a> describe its supported surface.</p>
+    </section>
+
+    <section aria-labelledby="saved-worlds">
+      <h2 id="saved-worlds">How saving and loading work</h2>
+      <p>A world is a collection of objects, properties, verbs, and supported virtual host state. The runtime serializes it as a versioned JSON snapshot, including its profile and verb source. Loading validates the snapshot and compiles supported verb source; it does not run those verbs just because a world was opened.</p>
+      <p>The app stores snapshots and code drafts in <strong>IndexedDB</strong>, your browser’s local database. Progress and preferences use local browser storage too. Each track and each named sandbox has its own world for each profile. Drafts are separate from worlds, and completion progress is shared between profiles.</p>
+      <p>Code drafts save as you edit; Eval text saves when evaluated. Switching workspaces saves pending work first. One tab at a time owns write access, which prevents competing tabs from overwriting each other’s worlds. Watch the save status if storage fails or another tab is editing.</p>
+      <p>Your saves belong to this browser and this site address. There is no account-based cloud sync. Clearing site data, changing browsers or devices, or using a different site address can leave you without access to those local saves. Use <strong>Export world</strong> and <strong>Download drafts</strong> for copies you control.</p>
+      <p><strong>Import world</strong> validates an exported snapshot and asks before replacing the active world. Choose the same profile used for the export. Academy JSON snapshots are not native LambdaMOO or ToastStunt <code>.db</code> files. <strong>Download drafts</strong> produces a separate JSON recovery file; copy its code back into an editor rather than importing it as a world.</p>
+      <p><strong>Load lesson starting world</strong> restores a lesson’s prepared state; <strong>Reset track world</strong> restores the beginning of a track. These actions ask for confirmation and keep code drafts and progress. Following lessons in order normally means keeping your current world.</p>
+    </section>
+
+    <section aria-labelledby="technology">
+      <h2 id="technology">Built with open-source projects</h2>
+      <ul class="resource-list">
+        <li><a href="https://github.com/SindomeCorp/moo-academy">MOO Academy</a> — this website’s source: interface, lessons, persistence, import tools, and tests.</li>
+        <li><a href="https://github.com/SindomeCorp/moo-in-javascript">moo-in-javascript</a> — the TypeScript/JavaScript educational runtime, world model, profiles, workers, and snapshot support.</li>
+        <li><a href="https://github.com/SindomeCorp/tree-sitter-moo">tree-sitter-moo</a> and <a href="https://github.com/tree-sitter/tree-sitter">Tree-sitter</a> — the MOO grammar and parsing system, used in the browser through <code>web-tree-sitter</code> and WebAssembly.</li>
+        <li><a href="https://github.com/sql-js/sql.js">sql.js</a> — SQLite compiled for JavaScript/WebAssembly, used by the runtime’s database exercises.</li>
+        <li><a href="https://github.com/lisdude/toastcore">ToastCore</a> — the original core database behind the imported Common Packages utilities.</li>
+        <li><a href="https://github.com/SindomeCorp/toaststunt-db-extractor">toaststunt-db-extractor</a> and <a href="https://github.com/SindomeCorp/moo-code-graph">moo-code-graph</a> — tools used to extract and analyze the native database while preparing Common Packages.</li>
+      </ul>
+      <p>Development and verification use Node.js, its test runner, and <a href="https://github.com/microsoft/playwright">Playwright</a> browser tests. Learners do not need these tools installed. The project repository includes setup instructions, licenses, and third-party notices.</p>
+      <p>Ready to explore the wider MOO ecosystem? Visit <a href="resources.html">Resources</a> for native servers, documentation, tutorials, and community links.</p>
+    </section>
+  </main>
+</body>
+</html>

@@ -1,16 +1,36 @@
 <!doctype html>
-<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Beyond the playground · MOO Academy</title><link rel="stylesheet" href="styles.css"><style>main{max-width:900px;margin:auto;padding:32px 20px;line-height:1.7}a{color:var(--green)}pre{white-space:pre-wrap;overflow-wrap:anywhere;background:var(--panel);padding:16px}section{margin:36px 0}h2{color:var(--amber)}li{margin:8px 0}</style></head><body>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>MOO Programming Beyond the Playground | MOO Academy</title><link rel="stylesheet" href="styles.css"><style>main{max-width:900px;margin:auto;padding:32px 20px;line-height:1.7}a{color:var(--green)}pre{white-space:pre-wrap;overflow-wrap:anywhere;background:var(--panel);padding:16px}section{margin:36px 0}h2{color:var(--amber)}li{margin:8px 0}</style>
+  <meta name="description" content="Take MOO programming beyond browser exercises: explore native-server commands, permissions, task scheduling, object lifetime, and deployment boundaries.">
+  <link rel="canonical" href="https://moo.mudverse.com/field-notes.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="MOO Academy">
+  <meta property="og:title" content="MOO Programming Beyond the Playground | MOO Academy">
+  <meta property="og:description" content="Take MOO programming beyond browser exercises: explore native-server commands, permissions, task scheduling, object lifetime, and deployment boundaries.">
+  <meta property="og:url" content="https://moo.mudverse.com/field-notes.html">
+  <meta property="og:image" content="https://moo.mudverse.com/social/overview.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1440">
+  <meta property="og:image:height" content="1100">
+  <meta property="og:image:alt" content="MOO Academy showing a MOO lesson, editable code, and a successfully completed exercise.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="MOO Programming Beyond the Playground | MOO Academy">
+  <meta name="twitter:description" content="Take MOO programming beyond browser exercises: explore native-server commands, permissions, task scheduling, object lifetime, and deployment boundaries.">
+  <meta name="twitter:image" content="https://moo.mudverse.com/social/overview.png">
+  <meta name="twitter:image:alt" content="MOO Academy showing a MOO lesson, editable code, and a successfully completed exercise.">
+</head><body>
   <header class="topbar">
-    <a class="brand" href="index.html">MOO<span>//</span>ACADEMY</a>
+    <a class="brand" href="./">MOO<span>//</span>ACADEMY</a>
     <nav class="site-links" aria-label="Site navigation">
-      <a href="index.html">Learning workspace</a>
+      <a href="./">Learning workspace</a>
       <a href="introduction.html">Introduction</a>
+      <a href="about.html">About</a>
+      <a href="resources.html">Resources</a>
       <a href="contact.html">Contact</a>
     </nav>
   </header>
 <main>
-<a href="index.html">← Return to MOO Academy</a>
-<h1>Beyond the playground</h1>
+<a href="./">← Return to MOO Academy</a>
+<h1>MOO programming beyond the playground</h1>
 <p>Use these field notes after the Objects, Verbs, and Debugging paths. The examples explain real-server concepts. They are not executable exercises in this playground. Core databases and server versions differ, so use a disposable practice server and its local help to verify them.</p>
 <nav aria-label="Field notes"><a href="#commands">Commands</a> · <a href="#permissions">Permissions</a> · <a href="#tasks">Tasks</a> · <a href="#lifecycle">Object lifetime</a> · <a href="#operations">Operations</a></nav>
 <section id="commands"><h2>1. From a player command to a verb call</h2><p>An explicit call such as <code>box:put(item)</code> supplies values directly. A command such as <code>put brush in box</code> starts as text. The server and core resolve objects and match a verb’s names and argument specifications. The same verb can receive very different context depending on how it was invoked.</p><ul><li><code>dobjstr</code> is direct-object text; <code>dobj</code> is the resolved object reference. They are not interchangeable.</li><li><code>iobjstr</code> and <code>iobj</code> describe the indirect object. <code>prepstr</code> records the preposition.</li><li><code>argstr</code> is the command argument text. Command <code>args</code> are not a programmatic API’s typed argument list.</li><li>Argument specifications describe command matching; they do not validate every explicit call.</li></ul><p><strong>Practice on a real server:</strong> inspect an existing command’s metadata, write down its receiver and resolved objects, then test a missing object, an ambiguous object name, and the equivalent explicit call. Separate the player-facing command from a reusable verb that accepts already validated values.</p></section>
