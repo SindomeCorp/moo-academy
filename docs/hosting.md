@@ -4,6 +4,10 @@ The production origin is **https://moo.mudverse.com**. Follow the
 [SEO launch checklist](seo.md) for canonical redirects, public indexing checks,
 and Search Console setup.
 
+For an existing Ubuntu/Debian Apache server, use the concrete
+[Apache, Route 53, and Let’s Encrypt runbook](apache-deployment.md) and the
+configuration templates under `deploy/apache/`.
+
 MOO Academy is a static site. Publish the contents of `dist/` to a web server or
 static hosting service; no application backend, database service, API keys, or
 build-time environment variables are required. Node, npm, and Python are local
