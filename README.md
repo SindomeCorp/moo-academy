@@ -172,3 +172,15 @@ ToastCore material retain their own licenses and author attributions; the projec
 license does not replace them. See [Third-party notices](THIRD_PARTY_NOTICES.md).
 
 This product includes software developed or owned by Caldera International, Inc.
+
+## Node.js 26 validation
+
+Validated on Linux with **Node.js 26.12.1** on **2026-10-26**. The Node test suite and committed-asset verification passed. The Playwright suite also passed all 223 tests across Chromium, Firefox, and WebKit.
+
+With Node.js 26.12.1 selected, reproduce the checks with:
+
+```sh
+npm test
+npm run test:assets
+npm run test:browser
+```
